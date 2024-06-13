@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5845CBF2C1A84CD00344EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5845CBE2C1A84CD00344EAA /* AppDelegate.swift */; };
+		C5845CC12C1A84CD00344EAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5845CC02C1A84CD00344EAA /* SceneDelegate.swift */; };
+		C5845CC32C1A84CD00344EAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5845CC22C1A84CD00344EAA /* ViewController.swift */; };
+		C5845CC62C1A84CD00344EAA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C5845CC52C1A84CD00344EAA /* Base */; };
+		C5845CC82C1A84CF00344EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5845CC72C1A84CF00344EAA /* Assets.xcassets */; };
+		C5845CCB2C1A84CF00344EAA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C5845CCA2C1A84CF00344EAA /* Base */; };
+		C5845CD62C1A84CF00344EAA /* HurbTravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5845CD52C1A84CF00344EAA /* HurbTravelTests.swift */; };
+		C5845CE02C1A84CF00344EAA /* HurbTravelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5845CDF2C1A84CF00344EAA /* HurbTravelUITests.swift */; };
+		C5845CE22C1A84CF00344EAA /* HurbTravelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5845CE12C1A84CF00344EAA /* HurbTravelUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5845CD22C1A84CF00344EAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5845CB32C1A84CD00344EAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5845CBA2C1A84CD00344EAA;
+			remoteInfo = HurbTravel;
+		};
+		C5845CDC2C1A84CF00344EAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5845CB32C1A84CD00344EAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5845CBA2C1A84CD00344EAA;
+			remoteInfo = HurbTravel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C5845CBB2C1A84CD00344EAA /* HurbTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HurbTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5845CBE2C1A84CD00344EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5845CC02C1A84CD00344EAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C5845CC22C1A84CD00344EAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5845CC52C1A84CD00344EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5845CC72C1A84CF00344EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5845CCA2C1A84CF00344EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5845CCC2C1A84CF00344EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5845CD12C1A84CF00344EAA /* HurbTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HurbTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5845CD52C1A84CF00344EAA /* HurbTravelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurbTravelTests.swift; sourceTree = "<group>"; };
+		C5845CDB2C1A84CF00344EAA /* HurbTravelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HurbTravelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5845CDF2C1A84CF00344EAA /* HurbTravelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurbTravelUITests.swift; sourceTree = "<group>"; };
+		C5845CE12C1A84CF00344EAA /* HurbTravelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurbTravelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5845CB82C1A84CD00344EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5845CCE2C1A84CF00344EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5845CD82C1A84CF00344EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5845CB22C1A84CD00344EAA = {
+			isa = PBXGroup;
+			children = (
+				C5845CBD2C1A84CD00344EAA /* HurbTravel */,
+				C5845CD42C1A84CF00344EAA /* HurbTravelTests */,
+				C5845CDE2C1A84CF00344EAA /* HurbTravelUITests */,
+				C5845CBC2C1A84CD00344EAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5845CBC2C1A84CD00344EAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5845CBB2C1A84CD00344EAA /* HurbTravel.app */,
+				C5845CD12C1A84CF00344EAA /* HurbTravelTests.xctest */,
+				C5845CDB2C1A84CF00344EAA /* HurbTravelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5845CBD2C1A84CD00344EAA /* HurbTravel */ = {
+			isa = PBXGroup;
+			children = (
+				C5845CBE2C1A84CD00344EAA /* AppDelegate.swift */,
+				C5845CC02C1A84CD00344EAA /* SceneDelegate.swift */,
+				C5845CC22C1A84CD00344EAA /* ViewController.swift */,
+				C5845CC42C1A84CD00344EAA /* Main.storyboard */,
+				C5845CC72C1A84CF00344EAA /* Assets.xcassets */,
+				C5845CC92C1A84CF00344EAA /* LaunchScreen.storyboard */,
+				C5845CCC2C1A84CF00344EAA /* Info.plist */,
+			);
+			path = HurbTravel;
+			sourceTree = "<group>";
+		};
+		C5845CD42C1A84CF00344EAA /* HurbTravelTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5845CD52C1A84CF00344EAA /* HurbTravelTests.swift */,
+			);
+			path = HurbTravelTests;
+			sourceTree = "<group>";
+		};
+		C5845CDE2C1A84CF00344EAA /* HurbTravelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5845CDF2C1A84CF00344EAA /* HurbTravelUITests.swift */,
+				C5845CE12C1A84CF00344EAA /* HurbTravelUITestsLaunchTests.swift */,
+			);
+			path = HurbTravelUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5845CBA2C1A84CD00344EAA /* HurbTravel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5845CE52C1A84CF00344EAA /* Build configuration list for PBXNativeTarget "HurbTravel" */;
+			buildPhases = (
+				C5845CB72C1A84CD00344EAA /* Sources */,
+				C5845CB82C1A84CD00344EAA /* Frameworks */,
+				C5845CB92C1A84CD00344EAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HurbTravel;
+			productName = HurbTravel;
+			productReference = C5845CBB2C1A84CD00344EAA /* HurbTravel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5845CD02C1A84CF00344EAA /* HurbTravelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5845CE82C1A84CF00344EAA /* Build configuration list for PBXNativeTarget "HurbTravelTests" */;
+			buildPhases = (
+				C5845CCD2C1A84CF00344EAA /* Sources */,
+				C5845CCE2C1A84CF00344EAA /* Frameworks */,
+				C5845CCF2C1A84CF00344EAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5845CD32C1A84CF00344EAA /* PBXTargetDependency */,
+			);
+			name = HurbTravelTests;
+			productName = HurbTravelTests;
+			productReference = C5845CD12C1A84CF00344EAA /* HurbTravelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C5845CDA2C1A84CF00344EAA /* HurbTravelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5845CEB2C1A84CF00344EAA /* Build configuration list for PBXNativeTarget "HurbTravelUITests" */;
+			buildPhases = (
+				C5845CD72C1A84CF00344EAA /* Sources */,
+				C5845CD82C1A84CF00344EAA /* Frameworks */,
+				C5845CD92C1A84CF00344EAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5845CDD2C1A84CF00344EAA /* PBXTargetDependency */,
+			);
+			name = HurbTravelUITests;
+			productName = HurbTravelUITests;
+			productReference = C5845CDB2C1A84CF00344EAA /* HurbTravelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5845CB32C1A84CD00344EAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					C5845CBA2C1A84CD00344EAA = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					C5845CD02C1A84CF00344EAA = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = C5845CBA2C1A84CD00344EAA;
+					};
+					C5845CDA2C1A84CF00344EAA = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = C5845CBA2C1A84CD00344EAA;
+					};
+				};
+			};
+			buildConfigurationList = C5845CB62C1A84CD00344EAA /* Build configuration list for PBXProject "HurbTravel" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5845CB22C1A84CD00344EAA;
+			productRefGroup = C5845CBC2C1A84CD00344EAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5845CBA2C1A84CD00344EAA /* HurbTravel */,
+				C5845CD02C1A84CF00344EAA /* HurbTravelTests */,
+				C5845CDA2C1A84CF00344EAA /* HurbTravelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5845CB92C1A84CD00344EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5845CC82C1A84CF00344EAA /* Assets.xcassets in Resources */,
+				C5845CCB2C1A84CF00344EAA /* Base in Resources */,
+				C5845CC62C1A84CD00344EAA /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5845CCF2C1A84CF00344EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5845CD92C1A84CF00344EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5845CB72C1A84CD00344EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5845CC32C1A84CD00344EAA /* ViewController.swift in Sources */,
+				C5845CBF2C1A84CD00344EAA /* AppDelegate.swift in Sources */,
+				C5845CC12C1A84CD00344EAA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5845CCD2C1A84CF00344EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5845CD62C1A84CF00344EAA /* HurbTravelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5845CD72C1A84CF00344EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5845CE02C1A84CF00344EAA /* HurbTravelUITests.swift in Sources */,
+				C5845CE22C1A84CF00344EAA /* HurbTravelUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5845CD32C1A84CF00344EAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5845CBA2C1A84CD00344EAA /* HurbTravel */;
+			targetProxy = C5845CD22C1A84CF00344EAA /* PBXContainerItemProxy */;
+		};
+		C5845CDD2C1A84CF00344EAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5845CBA2C1A84CD00344EAA /* HurbTravel */;
+			targetProxy = C5845CDC2C1A84CF00344EAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5845CC42C1A84CD00344EAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5845CC52C1A84CD00344EAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5845CC92C1A84CF00344EAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5845CCA2C1A84CF00344EAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5845CE32C1A84CF00344EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5845CE42C1A84CF00344EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5845CE62C1A84CF00344EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AJ85923B38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HurbTravel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MatheusFerreira.HurbTravel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5845CE72C1A84CF00344EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AJ85923B38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HurbTravel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MatheusFerreira.HurbTravel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C5845CE92C1A84CF00344EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AJ85923B38;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MatheusFerreira.HurbTravelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HurbTravel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HurbTravel";
+			};
+			name = Debug;
+		};
+		C5845CEA2C1A84CF00344EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AJ85923B38;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MatheusFerreira.HurbTravelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HurbTravel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HurbTravel";
+			};
+			name = Release;
+		};
+		C5845CEC2C1A84CF00344EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AJ85923B38;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MatheusFerreira.HurbTravelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HurbTravel;
+			};
+			name = Debug;
+		};
+		C5845CED2C1A84CF00344EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AJ85923B38;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MatheusFerreira.HurbTravelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HurbTravel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5845CB62C1A84CD00344EAA /* Build configuration list for PBXProject "HurbTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5845CE32C1A84CF00344EAA /* Debug */,
+				C5845CE42C1A84CF00344EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5845CE52C1A84CF00344EAA /* Build configuration list for PBXNativeTarget "HurbTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5845CE62C1A84CF00344EAA /* Debug */,
+				C5845CE72C1A84CF00344EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5845CE82C1A84CF00344EAA /* Build configuration list for PBXNativeTarget "HurbTravelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5845CE92C1A84CF00344EAA /* Debug */,
+				C5845CEA2C1A84CF00344EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5845CEB2C1A84CF00344EAA /* Build configuration list for PBXNativeTarget "HurbTravelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5845CEC2C1A84CF00344EAA /* Debug */,
+				C5845CED2C1A84CF00344EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5845CB32C1A84CD00344EAA /* Project object */;
+}
