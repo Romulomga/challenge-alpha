@@ -11,11 +11,12 @@
 		C5845CC12C1A84CD00344EAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5845CC02C1A84CD00344EAA /* SceneDelegate.swift */; };
 		C5845CC32C1A84CD00344EAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5845CC22C1A84CD00344EAA /* ViewController.swift */; };
 		C5845CC62C1A84CD00344EAA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C5845CC52C1A84CD00344EAA /* Base */; };
-		C5845CC82C1A84CF00344EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5845CC72C1A84CF00344EAA /* Assets.xcassets */; };
 		C5845CCB2C1A84CF00344EAA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C5845CCA2C1A84CF00344EAA /* Base */; };
 		C5845CD62C1A84CF00344EAA /* HurbTravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5845CD52C1A84CF00344EAA /* HurbTravelTests.swift */; };
 		C5845CE02C1A84CF00344EAA /* HurbTravelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5845CDF2C1A84CF00344EAA /* HurbTravelUITests.swift */; };
 		C5845CE22C1A84CF00344EAA /* HurbTravelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5845CE12C1A84CF00344EAA /* HurbTravelUITestsLaunchTests.swift */; };
+		C5845CF02C1A86B600344EAA /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5845CEF2C1A86B600344EAA /* Icons.xcassets */; };
+		C5845CF32C1A86FD00344EAA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5845CF22C1A86FD00344EAA /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,6 @@
 		C5845CC02C1A84CD00344EAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C5845CC22C1A84CD00344EAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C5845CC52C1A84CD00344EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C5845CC72C1A84CF00344EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5845CCA2C1A84CF00344EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5845CCC2C1A84CF00344EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5845CD12C1A84CF00344EAA /* HurbTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HurbTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +49,8 @@
 		C5845CDB2C1A84CF00344EAA /* HurbTravelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HurbTravelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5845CDF2C1A84CF00344EAA /* HurbTravelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurbTravelUITests.swift; sourceTree = "<group>"; };
 		C5845CE12C1A84CF00344EAA /* HurbTravelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurbTravelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C5845CEF2C1A86B600344EAA /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		C5845CF22C1A86FD00344EAA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,11 @@
 		C5845CBD2C1A84CD00344EAA /* HurbTravel */ = {
 			isa = PBXGroup;
 			children = (
+				C5845CEE2C1A869500344EAA /* Resources */,
 				C5845CBE2C1A84CD00344EAA /* AppDelegate.swift */,
 				C5845CC02C1A84CD00344EAA /* SceneDelegate.swift */,
 				C5845CC22C1A84CD00344EAA /* ViewController.swift */,
 				C5845CC42C1A84CD00344EAA /* Main.storyboard */,
-				C5845CC72C1A84CF00344EAA /* Assets.xcassets */,
-				C5845CC92C1A84CF00344EAA /* LaunchScreen.storyboard */,
 				C5845CCC2C1A84CF00344EAA /* Info.plist */,
 			);
 			path = HurbTravel;
@@ -125,6 +126,16 @@
 				C5845CE12C1A84CF00344EAA /* HurbTravelUITestsLaunchTests.swift */,
 			);
 			path = HurbTravelUITests;
+			sourceTree = "<group>";
+		};
+		C5845CEE2C1A869500344EAA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C5845CF22C1A86FD00344EAA /* Colors.xcassets */,
+				C5845CEF2C1A86B600344EAA /* Icons.xcassets */,
+				C5845CC92C1A84CF00344EAA /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +242,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5845CC82C1A84CF00344EAA /* Assets.xcassets in Resources */,
 				C5845CCB2C1A84CF00344EAA /* Base in Resources */,
+				C5845CF32C1A86FD00344EAA /* Colors.xcassets in Resources */,
+				C5845CF02C1A86B600344EAA /* Icons.xcassets in Resources */,
 				C5845CC62C1A84CD00344EAA /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
