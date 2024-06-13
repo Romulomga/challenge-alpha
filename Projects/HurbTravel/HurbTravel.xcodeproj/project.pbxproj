@@ -86,11 +86,12 @@
 		C5845CBD2C1A84CD00344EAA /* HurbTravel */ = {
 			isa = PBXGroup;
 			children = (
+				C594DA0A2C1AA8DF005EB1A5 /* ViewControllers */,
+				C594DA092C1AA8C8005EB1A5 /* Models */,
+				C594DA082C1AA6B9005EB1A5 /* Views */,
 				C5845CEE2C1A869500344EAA /* Resources */,
 				C5845CBE2C1A84CD00344EAA /* AppDelegate.swift */,
 				C5845CC02C1A84CD00344EAA /* SceneDelegate.swift */,
-				C5845CC22C1A84CD00344EAA /* ViewController.swift */,
-				C5845CC42C1A84CD00344EAA /* Main.storyboard */,
 				C5845CCC2C1A84CF00344EAA /* Info.plist */,
 			);
 			path = HurbTravel;
@@ -118,7 +119,6 @@
 			children = (
 				C5845CF22C1A86FD00344EAA /* Colors.xcassets */,
 				C5845CEF2C1A86B600344EAA /* Icons.xcassets */,
-				C5845CC92C1A84CF00344EAA /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -130,6 +130,30 @@
 			);
 			path = Modules;
 			sourceTree = SOURCE_ROOT;
+		};
+		C594DA082C1AA6B9005EB1A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5845CC92C1A84CF00344EAA /* LaunchScreen.storyboard */,
+				C5845CC42C1A84CD00344EAA /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C594DA092C1AA8C8005EB1A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C594DA0A2C1AA8DF005EB1A5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5845CC22C1A84CD00344EAA /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
