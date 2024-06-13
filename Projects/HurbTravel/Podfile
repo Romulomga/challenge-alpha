@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '13.0'
+
+target 'HurbTravel' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  inhibit_all_warnings!
+  use_frameworks!
+
+  # Pods for HurbTravel
+
+  target 'HurbTravelTests' do
+    inherit! :search_paths
+
+  pod 'HUNetwork', :path => './Modules/HUNetwork'
+    # Pods for testing
+  end
+
+  target 'HurbTravelUITests' do
+    # Pods for testing
+  end
+
+end
