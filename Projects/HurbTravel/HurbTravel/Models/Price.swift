@@ -19,7 +19,6 @@ struct Price: Codable {
     let currency: String
 }
 
-// Decode methods
 extension Price {
     
     init(from decoder: Decoder) throws {

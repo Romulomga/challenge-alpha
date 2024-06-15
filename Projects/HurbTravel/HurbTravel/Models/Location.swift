@@ -23,7 +23,6 @@ struct Location: Codable {
     let text: String?
 }
 
-// Decode methods
 extension Location {
     
     init(from decoder: Decoder) throws {

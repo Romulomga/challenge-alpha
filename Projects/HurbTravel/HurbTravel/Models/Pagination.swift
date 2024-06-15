@@ -21,7 +21,6 @@ struct Pagination: Codable {
     let hasNext: Bool
 }
 
-// Decode methods
 extension Pagination {
     
     init(from decoder: Decoder) throws {

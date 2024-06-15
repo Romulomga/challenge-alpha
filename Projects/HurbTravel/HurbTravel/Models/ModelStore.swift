@@ -1,5 +1,5 @@
 //
-//  AnyModelStore.swift
+//  ModelStore.swift
 //  HurbTravel
 //
 //  Created by Matheus Ferreira on 13/06/24.
@@ -14,7 +14,7 @@ protocol ModelStore {
     func fetchByID(_ id: Model.ID) -> Model
 }
 
-class AnyModelStore<Model: Identifiable>: ModelStore {
+class IdentifiableModelStore<Model: Identifiable>: ModelStore {
     
     private var models = [Model.ID: Model]()
     

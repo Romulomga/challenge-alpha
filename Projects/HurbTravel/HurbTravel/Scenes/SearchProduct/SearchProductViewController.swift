@@ -57,7 +57,7 @@ class SearchProductViewController: UIViewController {
     var router: (NSObjectProtocol & SearchProductRoutingLogic & SearchProductDataPassing)?
     
     private lazy var dataSource: UICollectionViewDiffableDataSource<Section.ID, Item.ID>! = nil
-    private lazy var itemsStore: AnyModelStore<Item> = AnyModelStore([])
+    private lazy var itemsStore: IdentifiableModelStore<Item> = IdentifiableModelStore([])
     
     private var searchController: UISearchController?
     private lazy var location: String = "Rio de janeiro"

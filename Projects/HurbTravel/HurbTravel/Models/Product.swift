@@ -41,7 +41,6 @@ struct Product: Codable, Identifiable, Hashable {
     let amenities: [Amenity]
 }
 
-// Decode methods
 extension Product {
     
     init(from decoder: Decoder) throws {

@@ -1,5 +1,5 @@
 //
-//  ProductContainer.swift
+//  Container.swift
 //  HurbTravel
 //
 //  Created by Matheus Ferreira on 13/06/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct ProductContainer: Codable {
+struct Container: Codable {
     
     private enum CodingKeys: String, CodingKey {
         
@@ -19,8 +19,7 @@ struct ProductContainer: Codable {
     let products: [Product]?
 }
 
-// Decode methods
-extension ProductContainer {
+extension Container {
     
     init(from decoder: Decoder) throws {
         

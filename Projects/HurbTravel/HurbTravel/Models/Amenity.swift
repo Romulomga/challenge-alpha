@@ -19,7 +19,6 @@ struct Amenity: Codable {
     let category: String
 }
 
-// Decode methods
 extension Amenity {
     
     init(from decoder: Decoder) throws {

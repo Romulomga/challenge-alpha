@@ -17,7 +17,6 @@ struct Media: Codable {
     let url: String
 }
 
-// Decode methods
 extension Media {
     
     init(from decoder: Decoder) throws {
