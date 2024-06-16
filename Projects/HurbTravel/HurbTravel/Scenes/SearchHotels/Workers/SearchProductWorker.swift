@@ -1,5 +1,5 @@
 //
-//  SearchProductWorker.swift
+//  SearchHotelsWorker.swift
 //  HurbTravel
 //
 //  Created by Matheus Ferreira on 13/06/24.
@@ -14,14 +14,9 @@ enum ServiceError: Error {
     case unknown(_ message: String)
 }
 
-protocol SearchProductWorkerProtocol {
+class SearchHotelsWorker: SearchHotelsProtocols {
     
-    func searchProducts(term: String, page: Int, limit: Int, completion: @escaping (Result<Container, ServiceError>) -> Void)
-}
-
-class SearchProductWorker: SearchProductWorkerProtocol {
-    
-    func searchProducts(term: String, page: Int, limit: Int, completion: @escaping (Result<Container, ServiceError>) -> Void) {
+    func searchHotels(term: String, page: Int, limit: Int, completion: @escaping (Result<Container, ServiceError>) -> Void) {
         
         let pagination: HUGraphQL.SearchInputPagination = HUGraphQL.SearchInputPagination(page: page, limit: limit, sort: nil, sortOrder: nil)
         let query: HUGraphQL.SearchQuery = HUGraphQL.SearchQuery(q: term, pagination: pagination)
@@ -52,4 +47,3 @@ class SearchProductWorker: SearchProductWorkerProtocol {
         }
     }
 }
-

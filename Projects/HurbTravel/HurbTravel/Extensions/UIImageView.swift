@@ -16,7 +16,7 @@ extension UIImageView {
         
         let placeholderImage = UIImage(named: "placeholder_image_name")
         
-        let processor = DownsamplingImageProcessor(size: self.bounds.size)
+        let imageProcessor = DownsamplingImageProcessor(size: self.bounds.size)
                      |> RoundCornerImageProcessor(cornerRadius: 20)
         
         self.kf.indicatorType = .activity
@@ -27,7 +27,7 @@ extension UIImageView {
                 with: anUrl,
                 placeholder: placeholderImage,
                 options: [
-                    .processor(processor),
+                    .processor(imageProcessor),
                     .scaleFactor(UIScreen.main.scale),
                     .transition(.fade(1)),
                     .cacheOriginalImage
@@ -35,13 +35,10 @@ extension UIImageView {
                 completionHandler: { [weak self] result in
                     
                     switch result {
-                        case .success(let value):
-                            let image = value.image
-                            // Perform image aspect ratio adjustment here if needed
-                            self?.contentMode = .scaleAspectFit
-                            
-                        case .failure(let error):
-                            print("Error loading image: \(error)")
+                    case .success(_):
+                        self?.contentMode = .scaleAspectFit
+                    case .failure(let error):
+                        print("Error loading image: \(error)")
                     }
                     
                     completion?()

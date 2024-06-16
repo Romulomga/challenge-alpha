@@ -8,7 +8,12 @@
 import UIKit
 import Foundation
 
-protocol AccommodationDetailsNavigationLogic {
+protocol AccommodationDetailsProtocol {
+    
+    func doSomeWork()
+}
+
+protocol AccommodationDetailsNavigation {
     func navigateToDetail(sender: Any?)
 }
 
@@ -25,24 +30,19 @@ protocol AccommodationDetailsDisplayLogic: AnyObject {
     func displayShareProduct(viewModel: AccommodationDetails.Share.ViewModel)
 }
 
-protocol AccommodationDetailsWorkerProtocol {
+protocol AccommodationDetailsBusinessLogic {
     
-    func doSomeWork()
-}
-
-protocol AccommodationDetailsLogic {
-    
-    func setupView()
+    func buildSetup()
     func shareProduct()
-}
-
-protocol AccommodationDetailsDataStore {
-    
-    var product: Product? { get set }
 }
 
 protocol AccommodationDetailsPresentationLogic {
     
     func presentSetupView(response: AccommodationDetails.Setup.Response)
     func presentShareProduct(response: AccommodationDetails.Share.Response)
+}
+
+protocol AccommodationDetailsDataStore {
+    
+    var product: Product? { get set }
 }

@@ -22,7 +22,7 @@ class SearchHotelsRouter: NSObject, SearchHotelsRoutingLogic, SearchHotelsDataPa
         self.dataStore = dataStore
     }
     
-    // MARK: Routing
+    // MARK: Route to
     
     func routeTo(segue: UIStoryboardSegue, sender: Any?) {
 
@@ -51,4 +51,3 @@ class SearchHotelsRouter: NSObject, SearchHotelsRoutingLogic, SearchHotelsDataPa
         self.viewController?.performSegue(withIdentifier: Segues.toDetails.rawValue, sender: nil)
     }
 }
-

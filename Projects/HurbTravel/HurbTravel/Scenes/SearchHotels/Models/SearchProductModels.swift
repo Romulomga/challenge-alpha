@@ -9,8 +9,6 @@ import UIKit
 
 enum SearchProduct {
     
-    // MARK: Use cases
-    
     enum Query {
         
         struct Request {

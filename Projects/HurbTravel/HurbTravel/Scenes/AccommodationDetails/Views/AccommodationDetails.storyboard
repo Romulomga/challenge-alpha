@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YOe-wZ-RwI">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -15,17 +15,17 @@
             <objects>
                 <viewController id="YOe-wZ-RwI" customClass="AccommodationDetailsViewController" customModule="HurbTravel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="egr-Ju-LxY">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="lDu-Xl-36d">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyL-pD-uFb">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="350"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ssH-cF-xbG">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="350"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                                                 <color key="backgroundColor" name="White-95"/>
                                             </imageView>
                                         </subviews>
@@ -42,16 +42,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4v-uv-SqN">
-                                        <rect key="frame" x="0.0" y="350" width="393" height="297.33333333333326"/>
+                                        <rect key="frame" x="0.0" y="350" width="375" height="297.33333333333326"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="7Sq-6R-baZ">
-                                                <rect key="frame" x="16" y="16" width="361" height="265.33333333333331"/>
+                                                <rect key="frame" x="16" y="16" width="343" height="265.33333333333331"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvf-Np-22d">
-                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="24"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="24"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8T-K0-zkv">
-                                                                <rect key="frame" x="0.0" y="0.0" width="361" height="24"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="24"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                                 <color key="textColor" name="Black-100"/>
@@ -67,10 +67,10 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPW-fF-Oub">
-                                                        <rect key="frame" x="0.0" y="28" width="361" height="19.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="28" width="343" height="19.333333333333329"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Rio de Janeiro, Brasil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFi-13-X5V">
-                                                                <rect key="frame" x="0.0" y="0.0" width="361" height="19.333333333333332"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="19.333333333333332"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <color key="textColor" name="Black-100"/>
@@ -86,10 +86,10 @@
                                                         </constraints>
                                                     </view>
                                                     <stackView contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jzW-Z2-xER">
-                                                        <rect key="frame" x="0.0" y="51.333333333333314" width="361" height="62.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="51.333333333333314" width="343" height="62.333333333333343"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ha-Da-3Z9">
-                                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="62.333333333333336"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="163.66666666666666" height="62.333333333333336"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oxN-zi-NFK">
                                                                         <rect key="frame" x="0.0" y="22.333333333333371" width="20" height="18.666666666666671"/>
@@ -101,7 +101,7 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="751" verticalCompressionResistancePriority="752" text="Café da manhã opcional" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNt-V0-3TI">
-                                                                        <rect key="frame" x="24" y="12" width="148.66666666666666" height="38.333333333333336"/>
+                                                                        <rect key="frame" x="24" y="12" width="139.66666666666666" height="38.333333333333336"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                         <color key="textColor" name="Black-100"/>
@@ -121,7 +121,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="joQ-Em-fJi">
-                                                                <rect key="frame" x="188.66666666666663" y="0.0" width="172.33333333333337" height="62.333333333333336"/>
+                                                                <rect key="frame" x="179.66666666666663" y="0.0" width="163.33333333333337" height="62.333333333333336"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pyP-Nr-Vaw">
                                                                         <rect key="frame" x="0.0" y="22.333333333333371" width="20" height="18.666666666666671"/>
@@ -133,7 +133,7 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="751" verticalCompressionResistancePriority="752" text="Café da manhã opcional" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xrg-AH-osW">
-                                                                        <rect key="frame" x="24" y="0.0" width="148.33333333333334" height="62.333333333333336"/>
+                                                                        <rect key="frame" x="24" y="0.0" width="139.33333333333334" height="62.333333333333336"/>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                         <color key="textColor" name="Black-100"/>
@@ -156,10 +156,10 @@
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Fs-ww-bnq">
-                                                        <rect key="frame" x="0.0" y="117.66666666666667" width="361" height="23.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="117.66666666666667" width="343" height="23.333333333333329"/>
                                                         <subviews>
                                                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="diárias a partir de" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpJ-ov-Lfc">
-                                                                <rect key="frame" x="0.0" y="4" width="361" height="19.333333333333332"/>
+                                                                <rect key="frame" x="0.0" y="4" width="343" height="19.333333333333332"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                                 <color key="textColor" name="Black-100"/>
@@ -175,10 +175,10 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="148-qc-Amx">
-                                                        <rect key="frame" x="0.0" y="145" width="361" height="26.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="145" width="343" height="26.333333333333343"/>
                                                         <subviews>
                                                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="R$ 0,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5L-cc-YIV">
-                                                                <rect key="frame" x="0.0" y="0.0" width="361" height="26.333333333333332"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="26.333333333333332"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                                                 <color key="textColor" name="Black-100"/>
@@ -194,10 +194,10 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZL-sb-th3">
-                                                        <rect key="frame" x="0.0" y="175.33333333333337" width="361" height="19.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="175.33333333333337" width="343" height="19.333333333333343"/>
                                                         <subviews>
                                                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="+ Taxas | até 12x no cartão" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awA-0q-Ei6">
-                                                                <rect key="frame" x="0.0" y="0.0" width="361" height="19.333333333333332"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="19.333333333333332"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                                 <color key="textColor" name="Black-100"/>
@@ -213,10 +213,10 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZw-1d-mDD">
-                                                        <rect key="frame" x="0.0" y="198.66666666666663" width="361" height="37.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="198.66666666666663" width="343" height="37.666666666666657"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Detalhes do" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUL-b3-eWo">
-                                                                <rect key="frame" x="0.0" y="16" width="361" height="21.666666666666671"/>
+                                                                <rect key="frame" x="0.0" y="16" width="343" height="21.666666666666671"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                                 <color key="textColor" name="Black-100"/>
@@ -232,10 +232,10 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7jk-8K-7Gi">
-                                                        <rect key="frame" x="0.0" y="240.33333333333337" width="361" height="25"/>
+                                                        <rect key="frame" x="0.0" y="240.33333333333337" width="343" height="25"/>
                                                         <subviews>
                                                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2r2-OM-idc">
-                                                                <rect key="frame" x="0.0" y="8" width="361" height="17"/>
+                                                                <rect key="frame" x="0.0" y="8" width="343" height="17"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <color key="textColor" name="Black-100"/>

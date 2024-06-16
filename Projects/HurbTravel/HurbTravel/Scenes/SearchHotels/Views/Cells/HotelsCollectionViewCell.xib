@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,17 +12,17 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductsCollectionViewCell" id="gTV-IL-0wX" customClass="HotelsCollectionViewCell" customModule="Hurb_iOS_Challenge" customModuleProvider="target">
+        <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotelsCollectionViewCell" id="gTV-IL-0wX" userLabel="HotelsCollectionViewCell" customClass="HotelsCollectionViewCell" customModule="HurbTravel" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="420" height="484"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="420" height="484"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pht-tn-eha" customClass="DesignableView" customModule="Hurb_iOS_Challenge" customModuleProvider="target">
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pht-tn-eha" customClass="DesignableView" customModule="HurbTravel" customModuleProvider="target">
                         <rect key="frame" x="16" y="16" width="388" height="452"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLX-rV-c07" customClass="DesignableView" customModule="Hurb_iOS_Challenge" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLX-rV-c07" customClass="DesignableView" customModule="HurbTravel" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="388" height="452"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4X-Ik-7fg">

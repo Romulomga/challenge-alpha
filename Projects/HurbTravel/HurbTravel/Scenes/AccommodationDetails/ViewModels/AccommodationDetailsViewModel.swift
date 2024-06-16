@@ -9,7 +9,7 @@ import UIKit
 
 class AccommodationDetailsViewModel {
     
-    var navigationDelegate: AccommodationDetailsNavigationLogic?
+    var navigationDelegate: AccommodationDetailsNavigation?
     var dataStore: AccommodationDetailsDataStore?
     
     init(dataStore: AccommodationDetailsDataStore) {

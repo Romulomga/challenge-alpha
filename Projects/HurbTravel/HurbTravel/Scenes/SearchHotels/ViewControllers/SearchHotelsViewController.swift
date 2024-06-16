@@ -13,9 +13,9 @@ private struct Section: Identifiable {
 
     enum Identifier: String, CaseIterable {
 
-        case empty = "Empty"
-        case noSearchResults = "NoSearchResults"
-        case results = "Results"
+        case empty = "Empty Section"
+        case noSearchResults = "No Search Results Section"
+        case results = "Results Section"
     }
     
     var id: Identifier
@@ -30,7 +30,7 @@ private struct Item: Identifiable {
 private class CollectionViewSkeletonDiffableDataSource<Section: Hashable, Item: Hashable>: UICollectionViewDiffableDataSource<Section, Item>, SkeletonCollectionViewDataSource {
 
     func collectionSkeletonView(_ skeletonView: UICollectionView, cellIdentifierForItemAt indexPath: IndexPath) -> ReusableCellIdentifier {
-        return ProductsCollectionViewCell.cellIdentifier
+        return HotelsCollectionViewCell.cellIdentifier
     }
 
     func collectionSkeletonView(_ skeletonView: UICollectionView, prepareCellForSkeleton cell: UICollectionViewCell, at indexPath: IndexPath) {
@@ -69,7 +69,7 @@ class SearchHotelsViewController: UIViewController {
         self.configureDataSource()
     }
     
-    // MARK: Routing
+    // MARK: Route to
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
@@ -101,13 +101,13 @@ class SearchHotelsViewController: UIViewController {
         self.collectionView.collectionViewLayout = self.createLayout()
         
         self.collectionView.register(
-            ProductsCollectionViewCell.nib,
-            forCellWithReuseIdentifier: ProductsCollectionViewCell.cellIdentifier
+            HotelsCollectionViewCell.nib,
+            forCellWithReuseIdentifier: HotelsCollectionViewCell.cellIdentifier
         )
         
         self.collectionView.register(
-            EmptyProductsCollectionViewCell.nib,
-            forCellWithReuseIdentifier: EmptyProductsCollectionViewCell.cellIdentifier
+            EmptyListCollectionViewCell.nib,
+            forCellWithReuseIdentifier: EmptyListCollectionViewCell.cellIdentifier
         )
         
         self.collectionView.register(
@@ -144,10 +144,10 @@ class SearchHotelsViewController: UIViewController {
             
             if let product: Product = item as? Product {
                 
-                guard let cell: ProductsCollectionViewCell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: ProductsCollectionViewCell.cellIdentifier,
+                guard let cell: HotelsCollectionViewCell = collectionView.dequeueReusableCell(
+                    withReuseIdentifier: HotelsCollectionViewCell.cellIdentifier,
                     for: indexPath
-                ) as? ProductsCollectionViewCell else { return nil }
+                ) as? HotelsCollectionViewCell else { return nil }
                 
                 cell.product = product
             
@@ -156,10 +156,10 @@ class SearchHotelsViewController: UIViewController {
             
             if let section: Section.Identifier = item as? Section.Identifier, section == .empty {
                 
-                guard let cell: EmptyProductsCollectionViewCell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: EmptyProductsCollectionViewCell.cellIdentifier,
+                guard let cell: EmptyListCollectionViewCell = collectionView.dequeueReusableCell(
+                    withReuseIdentifier: EmptyListCollectionViewCell.cellIdentifier,
                     for: indexPath
-                ) as? EmptyProductsCollectionViewCell else { return nil }
+                ) as? EmptyListCollectionViewCell else { return nil }
                             
                 return cell
             }
@@ -281,7 +281,7 @@ extension SearchHotelsViewController: UICollectionViewDelegate {
         
         if let product: Product = item as? Product {
             
-            self.interactor?.didSeletedHotel(request: SearchProduct.Selection.Request(product: product))
+            self.interactor?.didSelectedHotel(request: SearchProduct.Selection.Request(product: product))
         }
     }
 }

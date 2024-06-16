@@ -9,7 +9,7 @@ import Foundation
 
 extension String {
     
-    var stringReadingHtml: String? {
+    var readHtml: String? {
         
         let newString: String = self.replacingOccurrences(of: "\n", with: "<br>")
         guard let data = newString.data(using: .unicode, allowLossyConversion: false) else {

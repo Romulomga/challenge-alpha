@@ -47,7 +47,7 @@ class SearchHotelsInteractor: SearchHotelsBusinessLogic, SearchHotelsDataStore {
         })
     }
     
-    func didSeletedHotel(request: SearchProduct.Selection.Request) {
+    func didSelectedHotel(request: SearchProduct.Selection.Request) {
         
         self.product = request.product
         

@@ -9,8 +9,6 @@ import Foundation
 
 enum AccommodationDetails {
     
-    // MARK: Use cases
-    
     enum Setup {
         
         struct Request {

@@ -1,5 +1,5 @@
 //
-//  SearchHotelsProtocol.swift
+//  SearchHotelsProtocols.swift
 //  HurbTravel
 //
 //  Created by Matheus Ferreira on 15/06/24.
@@ -8,46 +8,46 @@
 import UIKit
 import Foundation
 
-protocol SearchProductProtocol {
+protocol SearchHotelsProtocols {
     
-    func searchProducts(term: String, page: Int, limit: Int, completion: @escaping (Result<Container, ServiceError>) -> Void)
+    func searchHotels(term: String, page: Int, limit: Int, completion: @escaping (Result<Container, ServiceError>) -> Void)
 }
 
-protocol SearchProductDataStore {
+protocol SearchHotelsDataStore {
     
     var product: Product? { get set }
 }
 
-protocol SearchProductDataPassing {
+protocol SearchHotelsDataPassing {
     
-    var dataStore: SearchProductDataStore? { get }
+    var dataStore: SearchHotelsDataStore? { get }
 }
 
-protocol SearchProductBusinessLogic {
+protocol SearchHotelsBusinessLogic {
     
-    func searchProducts(request: SearchProduct.Query.Request)
-    func didSeletedProduct(request: SearchProduct.Selection.Request)
+    func searchHotels(request: SearchProduct.Query.Request)
+    func didSelectedHotel(request: SearchProduct.Selection.Request)
 }
 
-protocol SearchProductDisplayLogic: AnyObject {
+protocol SearchHotelsDisplayLogic: AnyObject {
     
-    func displayNewProducts(viewModel: SearchProduct.Query.ViewModel)
+    func displayNewHotels(viewModel: SearchProduct.Query.ViewModel)
     func displayNoSearchResultsView()
     func displayErrorAlert()
     
-    func displayProductDetails()
+    func displayHotelsDetails()
 }
 
-protocol SearchProductPresentationLogic {
+protocol SearchHotelsPresentationLogic {
     
-    func presentNewProducts(response: SearchProduct.Query.Response)
+    func presentNewHotels(response: SearchProduct.Query.Response)
     func presentNoSearchResultsView()
     func presentErrorAlert()
     
-    func presentProductDetails()
+    func presentHotelsDetails()
 }
 
-@objc protocol SearchProductRoutingLogic {
+@objc protocol SearchHotelsRoutingLogic {
     
     func routeTo(segue: UIStoryboardSegue, sender: Any?)
     func navigateToDetails()

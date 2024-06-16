@@ -18,13 +18,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene:UIWindowScene = (scene as? UIWindowScene) else { return }
         let window: UIWindow = UIWindow(windowScene: windowScene)
         
-        /// Initialize the `SearchProductViewController` as the rootViewController:
-        let storyboard: UIStoryboard = UIStoryboard(name: "SearchProduct", bundle: nil)
+        /// Initialize the `SearchHotelsViewController` as the rootViewController:
+        let storyboard: UIStoryboard = UIStoryboard(name: "SearchHotels", bundle: nil)
         let navigationController: UINavigationController? = storyboard.instantiateViewController(withIdentifier: "SearchProductNavigationController") as? UINavigationController
         
-        if let controller: SearchProductViewController = navigationController?.viewControllers.first as? SearchProductViewController {
+        if let controller: SearchHotelsViewController = navigationController?.viewControllers.first as? SearchHotelsViewController {
             
-            SearchProductConfigurator.setupArch(viewController: controller)
+            SearchHotelsConfigurator.setup(viewController: controller)
             
             window.rootViewController = navigationController
             window.makeKeyAndVisible()

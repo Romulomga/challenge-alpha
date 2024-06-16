@@ -34,9 +34,8 @@ class SearchHotelsPresenter: SearchHotelsPresentationLogic {
         self.viewController?.displayErrorAlert()
     }
     
-    func presentProductDetails() {
+    func presentHotelsDetails() {
         
         self.viewController?.displayHotelsDetails()
     }
 }
-

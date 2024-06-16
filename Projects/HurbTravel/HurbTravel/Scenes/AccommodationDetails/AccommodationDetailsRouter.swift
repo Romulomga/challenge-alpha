@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AccommodationDetailsRouter: NSObject, AccommodationDetailsRoutingLogic, AccommodationDetailsDataPassing {
+class AccommodationDetailsRouter: NSObject, AccommodationDetailsRouting, AccommodationDetailsDataPassing {
     
     weak var viewController: AccommodationDetailsViewController?
     var dataStore: AccommodationDetailsDataStore?
@@ -18,9 +18,10 @@ class AccommodationDetailsRouter: NSObject, AccommodationDetailsRoutingLogic, Ac
         self.dataStore = dataStore
     }
     
-    // MARK: Routing
+    // MARK: Route to
     
     func routeTo(segue: UIStoryboardSegue, sender: Any?) {
+        
     }
 }
 

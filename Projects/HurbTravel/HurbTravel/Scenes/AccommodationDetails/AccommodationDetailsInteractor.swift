@@ -10,11 +10,11 @@ import UIKit
 class AccommodationDetailsInteractor: AccommodationDetailsBusinessLogic, AccommodationDetailsDataStore {
     
     var presenter: AccommodationDetailsPresentationLogic?
-    var worker: AccommodationDetailsWorkerProtocol?
+    var worker: AccommodationDetailsProtocol?
     
     var product: Product?
     
-    init(presenter: AccommodationDetailsPresentationLogic, worker: AccommodationDetailsWorkerProtocol) {
+    init(presenter: AccommodationDetailsPresentationLogic, worker: AccommodationDetailsProtocol) {
         
         self.presenter = presenter
         self.worker = worker
@@ -22,7 +22,7 @@ class AccommodationDetailsInteractor: AccommodationDetailsBusinessLogic, Accommo
     
     // MARK: Do something
     
-    func setupView() {
+    func buildSetup() {
 
         guard let product: Product = self.product else { return }
         
@@ -38,4 +38,3 @@ class AccommodationDetailsInteractor: AccommodationDetailsBusinessLogic, Accommo
         self.presenter?.presentShareProduct(response: response)
     }
 }
-

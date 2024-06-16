@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AccommodationDetailsWorker: AccommodationDetailsWorkerProtocol {
+class AccommodationDetailsWorker: AccommodationDetailsProtocol {
     
     func doSomeWork() {
         

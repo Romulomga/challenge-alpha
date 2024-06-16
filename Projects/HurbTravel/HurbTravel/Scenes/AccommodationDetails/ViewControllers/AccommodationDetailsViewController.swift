@@ -10,33 +10,33 @@ import Kingfisher
 
 class AccommodationDetailsViewController: UIViewController {
     
+    var router: (NSObjectProtocol & AccommodationDetailsRouting & AccommodationDetailsDataPassing)?
     var interactor: AccommodationDetailsBusinessLogic?
-    var router: (NSObjectProtocol & AccommodationDetailsRoutingLogic & AccommodationDetailsDataPassing)?
     
     // MARK: Outlets
 
     @IBOutlet private weak var photoImageView: UIImageView!
+    @IBOutlet private weak var firstAmenityView: UIView!
+    @IBOutlet private weak var secondAmenityView: UIView!
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var addressLabel: UILabel!
-    @IBOutlet private weak var topPriceLabel: UILabel!
     @IBOutlet private weak var priceLabel: UILabel!
+    @IBOutlet private weak var topPriceLabel: UILabel!
     @IBOutlet private weak var bottomPriceLabel: UILabel!
-    @IBOutlet private weak var firstAmenityView: UIView!
     @IBOutlet private weak var firstAmenityLabel: UILabel!
-    @IBOutlet private weak var secondAmenityView: UIView!
     @IBOutlet private weak var secondAmenityLabel: UILabel!
-    @IBOutlet private weak var descriptionTitleLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var descriptionTitleLabel: UILabel!
 
     // MARK: View lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setupLayout()
+        self.buildSetup()
     }
     
-    // MARK: Routing
+    // MARK: Route to
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
@@ -44,12 +44,12 @@ class AccommodationDetailsViewController: UIViewController {
         self.router?.routeTo(segue: segue, sender: sender)
     }
     
-    // MARK: Setup Layout
+    // MARK: Build Layout
     
-    private func setupLayout() {
+    private func buildSetup() {
      
         self.navigationItem.largeTitleDisplayMode = .never
-        self.interactor?.setupView()
+        self.interactor?.buildSetup()
     }
     
     // MARK: IBActions
@@ -68,11 +68,11 @@ extension AccommodationDetailsViewController: AccommodationDetailsDisplayLogic {
         
         self.nameLabel.text = "\(viewModel.product.name) - \(viewModel.product.category.rawValue ?? "")"
         self.addressLabel.text = viewModel.product.getFormattedAddress()
-        self.topPriceLabel.text = viewModel.product.getPriceTopText()
         self.priceLabel.text = viewModel.product.getFormattedPrice()
+        self.topPriceLabel.text = viewModel.product.getPriceTopText()
         self.bottomPriceLabel.text = viewModel.product.getPriceBottomText()
-        self.descriptionTitleLabel.text = viewModel.descriptionTitle
         self.descriptionLabel.text = viewModel.product.description.readHtml
+        self.descriptionTitleLabel.text = viewModel.descriptionTitle
         
         if let firstAmenity: Amenity = viewModel.product.amenities.first {
             

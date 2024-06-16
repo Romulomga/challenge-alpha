@@ -9,9 +9,9 @@ import UIKit
 import Kingfisher
 
 class HotelsCollectionViewCell: UICollectionViewCell {
-
+    
     // MARK: Outlets
-
+    
     @IBOutlet private weak var photoImageView: UIImageView!
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var addressLabel: UILabel!
@@ -22,9 +22,9 @@ class HotelsCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var firstAmenityLabel: UILabel!
     @IBOutlet private weak var secondAmenityView: UIView!
     @IBOutlet private weak var secondAmenityLabel: UILabel!
-
+    
     // MARK: Properties
-
+    
     var product: Product? {
         
         didSet {
@@ -55,16 +55,16 @@ class HotelsCollectionViewCell: UICollectionViewCell {
             }
         }
     }
-
+    
     // MARK: Overrides
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        
         self.firstAmenityView.isHidden = true
         self.secondAmenityView.isHidden = true
     }
-
+    
     override func prepareForReuse() {
         super.prepareForReuse()
         
@@ -72,25 +72,4 @@ class HotelsCollectionViewCell: UICollectionViewCell {
         self.firstAmenityView.isHidden = true
         self.secondAmenityView.isHidden = true
     }
-    
-//    override var isHighlighted: Bool {
-//        
-//        didSet {
-//            
-//            self.toggleIsHighlighted()
-//        }
-    }
-    
-    // MARK: Utils
-
-//    private func toggleIsHighlighted() {
-//        
-//        UIView.animate(withDuration: 0.1, delay: 0, options: [.curveEaseOut], animations: {
-//            
-//            self.alpha = self.isHighlighted ? 0.75 : 1.0
-//            self.transform = self.isHighlighted ?
-//            CGAffineTransform.identity.scaledBy(x: 0.95, y: 0.95) :
-//            CGAffineTransform.identity
-//        })
-//    }
-
+}
