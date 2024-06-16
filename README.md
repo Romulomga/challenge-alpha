@@ -17,7 +17,7 @@ Este projeto é um aplicativo de viagens que permite aos usuários explorar uma 
 
 #  Requisitos seguidos neste projeto:
 
-- **Minimum Target Version em Swift 13**.
+- **Minimum iOS Version em Swift 13**.
 - **XCode 14**.
 - **Swift 5**.
 
