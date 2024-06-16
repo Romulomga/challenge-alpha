@@ -7,29 +7,19 @@
 
 import UIKit
 
-protocol SearchLocationBusinessLogic {
+class SearchLocationInteractor: SearchLocationLogic, SearchLocationDataStore {
     
-    func searchTerm(request: SearchLocation.Setup.Request)
-}
-
-protocol SearchLocationDataStore {
-    
-//    var name: String { get set }
-}
-
-class SearchLocationInteractor: SearchLocationBusinessLogic, SearchLocationDataStore {
-    
-    var presenter: SearchLocationPresentationLogic?
-    var worker: SearchLocationWorkerProtocol?
+    var presenter: SearchLocationPresentation?
+    var worker: SearchLocationProtocols?
     lazy var term: String = ""
     
-    init(presenter: SearchLocationPresentationLogic, worker: SearchLocationWorkerProtocol) {
+    init(presenter: SearchLocationPresentation, worker: SearchLocationProtocols) {
         
         self.presenter = presenter
         self.worker = worker
     }
     
-    // MARK: Do something
+    // MARK: Do
     
     func searchTerm(request: SearchLocation.Setup.Request) {
         
@@ -64,4 +54,3 @@ class SearchLocationInteractor: SearchLocationBusinessLogic, SearchLocationDataS
         })
     }
 }
-

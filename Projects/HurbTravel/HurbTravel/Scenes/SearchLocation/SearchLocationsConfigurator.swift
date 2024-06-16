@@ -9,7 +9,7 @@ import UIKit
 
 @objc class SearchLocationConfigurator: NSObject {
     
-    @objc static func setupArch(viewController: SearchLocationViewController) {
+    @objc static func setup(viewController: SearchLocationViewController) {
         
         let presenter: SearchLocationPresenter = SearchLocationPresenter(viewController: viewController)
         let interactor: SearchLocationInteractor = SearchLocationInteractor(presenter: presenter, worker: SearchLocationWorker())
@@ -19,4 +19,3 @@ import UIKit
         viewController.router = router
     }
 }
-

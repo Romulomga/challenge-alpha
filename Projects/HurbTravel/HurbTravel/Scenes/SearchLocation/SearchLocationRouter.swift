@@ -7,22 +7,7 @@
 
 import UIKit
 
-// Private segues names
-//private enum Segues: String {
-//    case toSomewhere
-//}
-
-@objc protocol SearchLocationRoutingLogic {
-    
-    func routeTo(segue: UIStoryboardSegue, sender: Any?)
-}
-
-protocol SearchLocationDataPassing {
-    
-    var dataStore: SearchLocationDataStore? { get }
-}
-
-class SearchLocationRouter: NSObject, SearchLocationRoutingLogic, SearchLocationDataPassing {
+class SearchLocationRouter: NSObject, SearchLocationRouting, SearchLocationDataPassing {
     
     weak var viewController: SearchLocationViewController?
     var dataStore: SearchLocationDataStore?
@@ -33,21 +18,9 @@ class SearchLocationRouter: NSObject, SearchLocationRoutingLogic, SearchLocation
         self.dataStore = dataStore
     }
     
-    // MARK: Routing
+    // MARK: Route to
     
     func routeTo(segue: UIStoryboardSegue, sender: Any?) {
-
-//        switch segue.identifier {
-//
-//        case Segues.toSomewhere.rawValue:
-//            if let nextController: SomewhereViewController = segue.destination as? SomewhereViewController {
-//
-//                SomewhereConfigurator.setupArch(viewController: nextController)
-//            }
-//            break
-//
-//        default:
-//            break
-//        }
+        
     }
 }

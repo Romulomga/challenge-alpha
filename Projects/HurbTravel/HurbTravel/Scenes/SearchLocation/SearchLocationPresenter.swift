@@ -7,23 +7,16 @@
 
 import UIKit
 
-protocol SearchLocationPresentationLogic {
+class SearchLocationPresenter: SearchLocationPresentation {
     
-    func presentLocations(response: SearchLocation.Setup.Response)
-    func presentHideSkeleton()
-    func presentErrorAlert()
-}
-
-class SearchLocationPresenter: SearchLocationPresentationLogic {
+    weak var viewController: SearchLocationDisplay?
     
-    weak var viewController: SearchLocationDisplayLogic?
-    
-    init(viewController: SearchLocationDisplayLogic) {
+    init(viewController: SearchLocationDisplay) {
         
         self.viewController = viewController
     }
     
-    // MARK: Do something
+    // MARK: Do 
     
     func presentLocations(response: SearchLocation.Setup.Response) {
         
@@ -41,4 +34,3 @@ class SearchLocationPresenter: SearchLocationPresentationLogic {
         self.viewController?.displayErrorAlert()
     }
 }
-
