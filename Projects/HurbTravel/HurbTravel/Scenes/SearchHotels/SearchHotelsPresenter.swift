@@ -18,9 +18,9 @@ class SearchHotelsPresenter: SearchHotelsPresentationLogic {
     
     // MARK: Do something
     
-    func presentNewHotels(response: SearchProduct.Query.Response) {
+    func presentNewHotels(response: SearchHotelModel.Query.Response) {
         
-        let viewModel: SearchProduct.Query.ViewModel = SearchProduct.Query.ViewModel(pagination: response.pagination, products: response.products)
+        let viewModel: SearchHotelModel.Query.ViewModel = SearchHotelModel.Query.ViewModel(pagination: response.pagination, products: response.products)
         self.viewController?.displayNewHotels(viewModel: viewModel)
     }
     

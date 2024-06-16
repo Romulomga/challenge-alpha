@@ -25,13 +25,13 @@ protocol SearchHotelsDataPassing {
 
 protocol SearchHotelsBusinessLogic {
     
-    func searchHotels(request: SearchProduct.Query.Request)
-    func didSelectedHotel(request: SearchProduct.Selection.Request)
+    func searchHotels(request: SearchHotelModel.Query.Request)
+    func didSelectedHotel(request: SearchHotelModel.Selection.Request)
 }
 
 protocol SearchHotelsDisplayLogic: AnyObject {
     
-    func displayNewHotels(viewModel: SearchProduct.Query.ViewModel)
+    func displayNewHotels(viewModel: SearchHotelModel.Query.ViewModel)
     func displayNoSearchResultsView()
     func displayErrorAlert()
     
@@ -40,7 +40,7 @@ protocol SearchHotelsDisplayLogic: AnyObject {
 
 protocol SearchHotelsPresentationLogic {
     
-    func presentNewHotels(response: SearchProduct.Query.Response)
+    func presentNewHotels(response: SearchHotelModel.Query.Response)
     func presentNoSearchResultsView()
     func presentErrorAlert()
     

@@ -22,7 +22,7 @@ class SearchHotelsInteractor: SearchHotelsBusinessLogic, SearchHotelsDataStore {
     
     // MARK: Do something
     
-    func searchHotels(request: SearchProduct.Query.Request) {
+    func searchHotels(request: SearchHotelModel.Query.Request) {
         
         self.worker?.searchHotels(term: request.term, page: request.page, limit: request.limit, completion: { result in
             
@@ -32,7 +32,7 @@ class SearchHotelsInteractor: SearchHotelsBusinessLogic, SearchHotelsDataStore {
                     
                     if let products: [Product] = container.products, products.count > 0 {
                         
-                        let response: SearchProduct.Query.Response = SearchProduct.Query.Response(pagination: container.pagination, products: products)
+                        let response: SearchHotelModel.Query.Response = SearchHotelModel.Query.Response(pagination: container.pagination, products: products)
                         self.presenter?.presentNewHotels(response: response)
                     } else if request.page <= 1 {
                         
@@ -47,7 +47,7 @@ class SearchHotelsInteractor: SearchHotelsBusinessLogic, SearchHotelsDataStore {
         })
     }
     
-    func didSelectedHotel(request: SearchProduct.Selection.Request) {
+    func didSelectedHotel(request: SearchHotelModel.Selection.Request) {
         
         self.product = request.product
         

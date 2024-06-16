@@ -1,5 +1,5 @@
 //
-//  SearchProductModels.swift
+//  SearchHotekModel.swift
 //  HurbTravel
 //
 //  Created by Matheus Ferreira on 13/06/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum SearchProduct {
+enum SearchHotelModel {
     
     enum Query {
         

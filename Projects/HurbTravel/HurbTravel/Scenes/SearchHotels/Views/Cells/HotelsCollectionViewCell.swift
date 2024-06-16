@@ -1,5 +1,5 @@
 //
-//  ProductsCollectionViewCell.swift
+//  HotelsCollectionViewCell.swift
 //  HurbTravel
 //
 //  Created by Matheus Ferreira on 13/06/24.
@@ -58,6 +58,15 @@ class HotelsCollectionViewCell: UICollectionViewCell {
     
     // MARK: Overrides
     
+    // Feature image background highlight
+     override var isHighlighted: Bool {
+             
+             didSet {
+                 
+                 self.toggleIsHighlighted()
+             }
+         }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -72,4 +81,14 @@ class HotelsCollectionViewCell: UICollectionViewCell {
         self.firstAmenityView.isHidden = true
         self.secondAmenityView.isHidden = true
     }
-}
+        
+        // MARK: Utils
+
+        private func toggleIsHighlighted() {
+            
+            UIView.animate(withDuration: 0.1, delay: 0, animations: {
+                
+                self.backgroundColor = (self.isHighlighted) ? .systemGray3 : .systemBackground
+            })
+        }
+    }

@@ -42,5 +42,5 @@ enum AccommodationDetails {
             
             var sharedText: String
         }
-    }
+    }  
 }

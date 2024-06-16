@@ -13,9 +13,9 @@ private struct Section: Identifiable {
 
     enum Identifier: String, CaseIterable {
 
+        case results = "Results Section"
         case empty = "Empty Section"
         case noSearchResults = "No Search Results Section"
-        case results = "Results Section"
     }
     
     var id: Identifier
@@ -201,7 +201,7 @@ class SearchHotelsViewController: UIViewController {
 
 extension SearchHotelsViewController: SearchHotelsDisplayLogic {
 
-    func displayNewHotels(viewModel: SearchProduct.Query.ViewModel) {
+    func displayNewHotels(viewModel: SearchHotelModel.Query.ViewModel) {
         
         self.hasNext = viewModel.pagination?.hasNext ?? false
         
@@ -268,7 +268,7 @@ extension SearchHotelsViewController: UICollectionViewDelegate {
                 
                 self.page += 1
                 self.hasNext = false
-                let request: SearchProduct.Query.Request = SearchProduct.Query.Request(term: self.location, page: self.page, limit: self.limit)
+                let request: SearchHotelModel.Query.Request = SearchHotelModel.Query.Request(term: self.location, page: self.page, limit: self.limit)
                 self.interactor?.searchHotels(request: request)
             }
         }
@@ -281,7 +281,7 @@ extension SearchHotelsViewController: UICollectionViewDelegate {
         
         if let product: Product = item as? Product {
             
-            self.interactor?.didSelectedHotel(request: SearchProduct.Selection.Request(product: product))
+            self.interactor?.didSelectedHotel(request: SearchHotelModel.Selection.Request(product: product))
         }
     }
 }
@@ -348,9 +348,8 @@ extension SearchHotelsViewController: SuggestedResult {
             self.hasNext = false
             
             self.collectionView.showAnimatedGradientSkeleton(transition: .none)
-            let request: SearchProduct.Query.Request = SearchProduct.Query.Request(term: self.location, page: self.page, limit: self.limit)
+            let request: SearchHotelModel.Query.Request = SearchHotelModel.Query.Request(term: self.location, page: self.page, limit: self.limit)
             self.interactor?.searchHotels(request: request)
         })
     }
 }
-
