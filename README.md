@@ -13,7 +13,7 @@ Este projeto é um aplicativo de viagens que permite aos usuários explorar uma 
 - **Lista de Lugares Disponíveis**: Visualize uma lista de lugares disponíveis para viagem.
 - **Detalhes do Lugar**: Explore informações detalhadas sobre cada lugar, como descrição, imagens e outras características.
 - **Integração com API GraphQL**: Utilização eficiente de GraphQL para consumir dados da API de forma flexível e eficiente.
-- **Arquitetura MVVM**: Implementação da arquitetura MVVM (Model-View-ViewModel) para separação clara de responsabilidades e facilitar a manutenção do código.
+- **Arquitetura VIP**: Implementação da arquitetura VIP (View, Interactor, Presenter) e para separação clara de responsabilidades e facilitar a manutenção do código.
 
 #  Requisitos seguidos neste projeto:
 
