@@ -8,7 +8,7 @@
 import UIKit
 @testable import HurbTravel
 
-class AccommodationDetailsViewControllerSpy: AccommodationDetailsDisplayLogic {
+class AccommodationDetailsViewControllerSpy: AccommodationDetailsDisplay {
 
         var invokedDisplaySetupView = false
         var invokedDisplaySetupViewCount = 0

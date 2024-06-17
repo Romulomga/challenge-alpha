@@ -8,7 +8,7 @@
 import XCTest
 @testable import HurbTravel
 
-class AccommodationDetailsPresenterSpy: AccommodationDetailsPresentationLogic {
+class AccommodationDetailsPresenterSpy: AccommodationDetailsPresentation {
 
     var invokedPresentSetupView = false
     var invokedPresentSetupViewCount = 0

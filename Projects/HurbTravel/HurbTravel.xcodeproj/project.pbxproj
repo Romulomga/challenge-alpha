@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C512E5CC2C1DF69500DB9CE2 /* AccommodationDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C512E5CB2C1DF69500DB9CE2 /* AccommodationDetailsViewModel.swift */; };
-		C512E5CE2C1DF7A400DB9CE2 /* AccommodationDetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C512E5CD2C1DF7A400DB9CE2 /* AccommodationDetailsProtocols.swift */; };
 		C512E5DB2C1E1C5800DB9CE2 /* SearchLocationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C512E5DA2C1E1C5800DB9CE2 /* SearchLocationProtocols.swift */; };
 		C512E5E22C1E62FF00DB9CE2 /* SearchHotelsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C512E5E12C1E62FF00DB9CE2 /* SearchHotelsProtocols.swift */; };
 		C543F76F2C1BA0B000CE4C5B /* AccommodationDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C543F76E2C1BA0B000CE4C5B /* AccommodationDetails.storyboard */; };
@@ -92,8 +90,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C512E5CB2C1DF69500DB9CE2 /* AccommodationDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccommodationDetailsViewModel.swift; sourceTree = "<group>"; };
-		C512E5CD2C1DF7A400DB9CE2 /* AccommodationDetailsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccommodationDetailsProtocols.swift; sourceTree = "<group>"; };
 		C512E5DA2C1E1C5800DB9CE2 /* SearchLocationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationProtocols.swift; sourceTree = "<group>"; };
 		C512E5E12C1E62FF00DB9CE2 /* SearchHotelsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHotelsProtocols.swift; sourceTree = "<group>"; };
 		C543F76E2C1BA0B000CE4C5B /* AccommodationDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccommodationDetails.storyboard; sourceTree = "<group>"; };
@@ -195,28 +191,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		C512E5D02C1E081800DB9CE2 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				C512E5CB2C1DF69500DB9CE2 /* AccommodationDetailsViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		C512E5D12C1E082500DB9CE2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				C543F76E2C1BA0B000CE4C5B /* AccommodationDetails.storyboard */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		C512E5D22C1E083900DB9CE2 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				C512E5CD2C1DF7A400DB9CE2 /* AccommodationDetailsProtocols.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		C512E5D32C1E085100DB9CE2 /* ViewControllers */ = {
@@ -322,10 +302,8 @@
 		C543F7842C1BA68D00CE4C5B /* AccommodationDetails */ = {
 			isa = PBXGroup;
 			children = (
-				C512E5D22C1E083900DB9CE2 /* Protocols */,
 				C512E5D12C1E082500DB9CE2 /* Views */,
 				C512E5D32C1E085100DB9CE2 /* ViewControllers */,
-				C512E5D02C1E081800DB9CE2 /* ViewModels */,
 				C512E5CF2C1E080E00DB9CE2 /* Models */,
 				C543F7872C1BA71E00CE4C5B /* AccommodationDetailsConfigurator.swift */,
 				C543F7892C1BA74B00CE4C5B /* AccommodationDetailsInteractor.swift */,
@@ -698,11 +676,9 @@
 				C543F78A2C1BA74B00CE4C5B /* AccommodationDetailsInteractor.swift in Sources */,
 				C5845CBF2C1A84CD00344EAA /* AppDelegate.swift in Sources */,
 				C543F8202C1BD79B00CE4C5B /* EmptyListCollectionViewCell.swift in Sources */,
-				C512E5CC2C1DF69500DB9CE2 /* AccommodationDetailsViewModel.swift in Sources */,
 				C543F80B2C1BD2A300CE4C5B /* UICollectionReusableView+reuseIdentifier.swift in Sources */,
 				C543F77C2C1BA5F000CE4C5B /* Location.swift in Sources */,
 				C543F8102C1BD72F00CE4C5B /* SearchHotelsConfigurator.swift in Sources */,
-				C512E5CE2C1DF7A400DB9CE2 /* AccommodationDetailsProtocols.swift in Sources */,
 				C543F8182C1BD76D00CE4C5B /* SearchHotelsPresenter.swift in Sources */,
 				C543F7822C1BA64700CE4C5B /* Container.swift in Sources */,
 				C543F7732C1BA4EF00CE4C5B /* ModelStore.swift in Sources */,

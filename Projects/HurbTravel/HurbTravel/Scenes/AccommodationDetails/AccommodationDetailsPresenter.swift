@@ -7,11 +7,17 @@
 
 import UIKit
 
-class AccommodationDetailsPresenter: AccommodationDetailsPresentationLogic {
+protocol AccommodationDetailsPresentation {
     
-    weak var viewController: AccommodationDetailsDisplayLogic?
+    func presentSetupView(response: AccommodationDetails.Setup.Response)
+    func presentShareProduct(response: AccommodationDetails.Share.Response)
+}
+
+class AccommodationDetailsPresenter: AccommodationDetailsPresentation {
     
-    init(viewController: AccommodationDetailsDisplayLogic) {
+    weak var viewController: AccommodationDetailsDisplay?
+    
+    init(viewController: AccommodationDetailsDisplay) {
         
         self.viewController = viewController
     }
@@ -32,4 +38,3 @@ class AccommodationDetailsPresenter: AccommodationDetailsPresentationLogic {
         self.viewController?.displayShareProduct(viewModel: viewModel)
     }
 }
-

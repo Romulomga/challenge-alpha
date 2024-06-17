@@ -34,7 +34,7 @@ class SearchHotelsRouter: NSObject, SearchHotelsRoutingLogic, SearchHotelsDataPa
                 AccommodationDetailsConfigurator.setup(viewController: nextController)
                 
                 if let sourceDataStore: SearchHotelsDataStore = self.dataStore,
-                   var destinationDataSource: AccommodationDetailsDataStore = nextController.router?.dataStore {
+                   var destinationDataSource: AccommodationDataStore = nextController.router?.dataStore {
 
                     destinationDataSource.product = sourceDataStore.product
                 }

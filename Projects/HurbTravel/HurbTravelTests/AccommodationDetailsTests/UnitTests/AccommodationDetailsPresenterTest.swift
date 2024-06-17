@@ -10,7 +10,7 @@ import XCTest
 
 class AccommodationDetailsPresenterTest: XCTestCase {
     
-    var sut: AccommodationDetailsPresentationLogic!
+    var sut: AccommodationDetailsPresentation!
     var viewControllerSpy: AccommodationDetailsViewControllerSpy!
     
     override func setUp() {
