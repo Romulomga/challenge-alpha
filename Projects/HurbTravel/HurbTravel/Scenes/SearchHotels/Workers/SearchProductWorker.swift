@@ -14,6 +14,11 @@ enum ServiceError: Error {
     case unknown(_ message: String)
 }
 
+protocol SearchHotelsProtocols {
+    
+    func searchHotels(term: String, page: Int, limit: Int, completion: @escaping (Result<Container, ServiceError>) -> Void)
+}
+
 class SearchHotelsWorker: SearchHotelsProtocols {
     
     func searchHotels(term: String, page: Int, limit: Int, completion: @escaping (Result<Container, ServiceError>) -> Void) {

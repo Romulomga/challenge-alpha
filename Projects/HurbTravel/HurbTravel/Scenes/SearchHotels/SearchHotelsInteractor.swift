@@ -7,14 +7,25 @@
 
 import UIKit
 
-class SearchHotelsInteractor: SearchHotelsBusinessLogic, SearchHotelsDataStore {
+protocol SearchHotelsLogic {
     
-    var presenter: SearchHotelsPresentationLogic?
+    func searchHotels(request: SearchHotelModel.Query.Request)
+    func didSelectedHotel(request: SearchHotelModel.SelectionRequest)
+}
+
+protocol SearchHotelsDataStore {
+    
+    var product: Product? { get set }
+}
+
+class SearchHotelsInteractor: SearchHotelsLogic, SearchHotelsDataStore {
+    
+    var presenter: SearchHotelsPresentation?
     var worker: SearchHotelsProtocols?
 
     var product: Product?
 
-    init(presenter: SearchHotelsPresentationLogic, worker: SearchHotelsProtocols) {
+    init(presenter: SearchHotelsPresentation, worker: SearchHotelsProtocols) {
         
         self.presenter = presenter
         self.worker = worker
@@ -47,7 +58,7 @@ class SearchHotelsInteractor: SearchHotelsBusinessLogic, SearchHotelsDataStore {
         })
     }
     
-    func didSelectedHotel(request: SearchHotelModel.Selection.Request) {
+    func didSelectedHotel(request: SearchHotelModel.SelectionRequest) {
         
         self.product = request.product
         

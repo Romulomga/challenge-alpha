@@ -89,6 +89,9 @@ class HotelsCollectionViewCell: UICollectionViewCell {
             UIView.animate(withDuration: 0.1, delay: 0, animations: {
                 
                 self.backgroundColor = (self.isHighlighted) ? .systemGray3 : .systemBackground
+                self.transform = self.isHighlighted ?
+                CGAffineTransform.identity.scaledBy(x: 0.95, y: 0.95) :
+                CGAffineTransform.identity
             })
         }
     }

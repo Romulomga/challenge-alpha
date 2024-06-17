@@ -9,6 +9,14 @@ import UIKit
 import HUGraphQL
 import SkeletonView
 
+protocol SearchHotelsDisplay: AnyObject {
+    
+    func displayNewHotels(viewModel: SearchHotelModel.Query.ViewModel)
+    func displayNoSearchResultsView()
+    func displayErrorAlert()
+    func displayHotelsDetails()
+}
+
 private struct Section: Identifiable {
 
     enum Identifier: String, CaseIterable {
@@ -33,10 +41,6 @@ private class CollectionViewSkeletonDiffableDataSource<Section: Hashable, Item: 
         return HotelsCollectionViewCell.reuseIdentifier
     }
 
-    func collectionSkeletonView(_ skeletonView: UICollectionView, prepareCellForSkeleton cell: UICollectionViewCell, at indexPath: IndexPath) {
-
-    }
-
     func collectionSkeletonView(_ skeletonView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 50
     }
@@ -44,17 +48,17 @@ private class CollectionViewSkeletonDiffableDataSource<Section: Hashable, Item: 
 
 class SearchHotelsViewController: UIViewController {
     
-    var interactor: SearchHotelsBusinessLogic?
-    var router: (NSObjectProtocol & SearchHotelsRoutingLogic & SearchHotelsDataPassing)?
+    var interactor: SearchHotelsLogic?
+    var router: (NSObjectProtocol & SearchHotelsRouting & SearchHotelsDataPassing)?
+    
+    private var searchController: UISearchController?
     
     private lazy var dataSource: UICollectionViewDiffableDataSource<Section.ID, Item.ID>! = nil
     private lazy var itemsStore: IdentifiableModelStore<Item> = IdentifiableModelStore([])
-    
-    private var searchController: UISearchController?
+    private lazy var hasNext: Bool = false
     private lazy var location: String = "Rio de janeiro"
     private lazy var page: Int = 1
     private lazy var limit: Int = 15
-    private lazy var hasNext: Bool = false
     private lazy var searchTimer: Timer = Timer()
 
     @IBOutlet private weak var collectionView: UICollectionView!
@@ -95,7 +99,6 @@ class SearchHotelsViewController: UIViewController {
     }
     
     // MARK: Configure Collection View
-
     private func configureHierarchy() {
         
         self.collectionView.collectionViewLayout = self.createLayout()
@@ -199,7 +202,7 @@ class SearchHotelsViewController: UIViewController {
     }
 }
 
-extension SearchHotelsViewController: SearchHotelsDisplayLogic {
+extension SearchHotelsViewController: SearchHotelsDisplay {
 
     func displayNewHotels(viewModel: SearchHotelModel.Query.ViewModel) {
         
@@ -281,7 +284,7 @@ extension SearchHotelsViewController: UICollectionViewDelegate {
         
         if let product: Product = item as? Product {
             
-            self.interactor?.didSelectedHotel(request: SearchHotelModel.Selection.Request(product: product))
+            self.interactor?.didSelectedHotel(request: SearchHotelModel.SelectionRequest(product: product))
         }
     }
 }

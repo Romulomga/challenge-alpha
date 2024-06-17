@@ -7,11 +7,19 @@
 
 import UIKit
 
-class SearchHotelsPresenter: SearchHotelsPresentationLogic {
+protocol SearchHotelsPresentation {
     
-    weak var viewController: SearchHotelsDisplayLogic?
+    func presentNewHotels(response: SearchHotelModel.Query.Response)
+    func presentNoSearchResultsView()
+    func presentErrorAlert()
+    func presentHotelsDetails()
+}
+
+class SearchHotelsPresenter: SearchHotelsPresentation {
     
-    init(viewController: SearchHotelsDisplayLogic) {
+    weak var viewController: SearchHotelsDisplay?
+    
+    init(viewController: SearchHotelsDisplay) {
         
         self.viewController = viewController
     }

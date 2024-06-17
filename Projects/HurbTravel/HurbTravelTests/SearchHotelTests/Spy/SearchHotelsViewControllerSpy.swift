@@ -7,7 +7,7 @@
 
 @testable import HurbTravel
 
-class SearchHotelsViewControllerSpy: SearchHotelsDisplayLogic {
+class SearchHotelsViewControllerSpy: SearchHotelsDisplay {
 
     var invokedDisplayNewHotels = false
     var invokedDisplayNewHotelsCount = 0
