@@ -53,7 +53,7 @@ private class CollectionViewSkeletonDiffableDataSource<Section: Hashable, Item: 
 class SearchLocationViewController: UIViewController {
     
     var interactor: SearchLocationLogic?
-    var router: (NSObjectProtocol & SearchLocationRouting)?
+    var router: (NSObjectProtocol)?
     
     private lazy var dataSource: UICollectionViewDiffableDataSource<Section, Item>! = nil
     weak var delegate: SuggestedResult?

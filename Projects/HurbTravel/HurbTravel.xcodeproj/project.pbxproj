@@ -33,7 +33,6 @@
 		C543F7FE2C1BD04A00CE4C5B /* SearchLocationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C543F7FD2C1BD04A00CE4C5B /* SearchLocationWorker.swift */; };
 		C543F8002C1BD06100CE4C5B /* SearchLocationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C543F7FF2C1BD06100CE4C5B /* SearchLocationPresenter.swift */; };
 		C543F8022C1BD08000CE4C5B /* SearchLocationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C543F8012C1BD08000CE4C5B /* SearchLocationInteractor.swift */; };
-		C543F8042C1BD0A000CE4C5B /* SearchLocationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C543F8032C1BD0A000CE4C5B /* SearchLocationRouter.swift */; };
 		C543F8062C1BD0CA00CE4C5B /* SearchLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C543F8052C1BD0CA00CE4C5B /* SearchLocationViewController.swift */; };
 		C543F8092C1BD24B00CE4C5B /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = C543F8082C1BD24B00CE4C5B /* SkeletonView */; };
 		C543F80B2C1BD2A300CE4C5B /* UICollectionReusableView+reuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C543F80A2C1BD2A300CE4C5B /* UICollectionReusableView+reuseIdentifier.swift */; };
@@ -112,7 +111,6 @@
 		C543F7FD2C1BD04A00CE4C5B /* SearchLocationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationWorker.swift; sourceTree = "<group>"; };
 		C543F7FF2C1BD06100CE4C5B /* SearchLocationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationPresenter.swift; sourceTree = "<group>"; };
 		C543F8012C1BD08000CE4C5B /* SearchLocationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationInteractor.swift; sourceTree = "<group>"; };
-		C543F8032C1BD0A000CE4C5B /* SearchLocationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationRouter.swift; sourceTree = "<group>"; };
 		C543F8052C1BD0CA00CE4C5B /* SearchLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationViewController.swift; sourceTree = "<group>"; };
 		C543F80A2C1BD2A300CE4C5B /* UICollectionReusableView+reuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionReusableView+reuseIdentifier.swift"; sourceTree = "<group>"; };
 		C543F80F2C1BD72F00CE4C5B /* SearchHotelsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHotelsConfigurator.swift; sourceTree = "<group>"; };
@@ -315,7 +313,6 @@
 				C543F7F92C1BCE5D00CE4C5B /* SearchLocationsConfigurator.swift */,
 				C543F8012C1BD08000CE4C5B /* SearchLocationInteractor.swift */,
 				C543F7FF2C1BD06100CE4C5B /* SearchLocationPresenter.swift */,
-				C543F8032C1BD0A000CE4C5B /* SearchLocationRouter.swift */,
 			);
 			path = SearchLocation;
 			sourceTree = "<group>";
@@ -637,7 +634,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C543F7932C1BA83100CE4C5B /* String+readHtml.swift in Sources */,
-				C543F8042C1BD0A000CE4C5B /* SearchLocationRouter.swift in Sources */,
 				C543F7952C1BA86700CE4C5B /* NumberFormatter+currencyFormat.swift in Sources */,
 				C5845CC32C1A84CD00344EAA /* AccommodationDetailsViewController.swift in Sources */,
 				C543F8022C1BD08000CE4C5B /* SearchLocationInteractor.swift in Sources */,
