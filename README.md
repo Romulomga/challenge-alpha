@@ -37,8 +37,19 @@ Este projeto é um aplicativo de viagens que permite aos usuários explorar uma 
   
 # Como Executar o Projeto?
 
-**Clone este repositório**.
+1. **Clone o Repositório:**
 
+   Clone este repositório para a sua máquina local usando o seguinte comando:
+```
+  git clone https://github.com/MatheusFerreiraZx/challenge-alpha
+  ```
+
+2. **Execute o Projeto:**
+
+Navegue até o diretório do projeto, abra no XCode e pode rodar, o app não requer instalação extra:
+```
+cd challenge-alpha
+```
 # Screenshots do projeto:
 
 - **LAUNCHSCREEN**
