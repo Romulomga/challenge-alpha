@@ -26,7 +26,7 @@ private struct Item: Hashable {
 private class CollectionViewSkeletonDiffableDataSource<Section: Hashable, Item: Hashable>: UICollectionViewDiffableDataSource<Section, Item>, SkeletonCollectionViewDataSource {
 
     func collectionSkeletonView(_ skeletonView: UICollectionView, cellIdentifierForItemAt indexPath: IndexPath) -> ReusableCellIdentifier {
-        return SearchLocationCollectionViewCell.cellIdentifier
+        return SearchLocationCollectionViewCell.reuseIdentifier
     }
 
     func collectionSkeletonView(_ skeletonView: UICollectionView, prepareCellForSkeleton cell: UICollectionViewCell, at indexPath: IndexPath) {
@@ -72,7 +72,7 @@ class SearchLocationViewController: UIViewController {
         
         self.collectionView.register(
             SearchLocationCollectionViewCell.nib,
-            forCellWithReuseIdentifier: SearchLocationCollectionViewCell.cellIdentifier
+            forCellWithReuseIdentifier: SearchLocationCollectionViewCell.reuseIdentifier
         )
     }
     
@@ -101,7 +101,7 @@ class SearchLocationViewController: UIViewController {
         self.dataSource = CollectionViewSkeletonDiffableDataSource<Section, Item>(collectionView: collectionView) { (collectionView: UICollectionView, indexPath: IndexPath, location: Item) -> UICollectionViewCell? in
             
             guard let cell: SearchLocationCollectionViewCell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: SearchLocationCollectionViewCell.cellIdentifier,
+                withReuseIdentifier: SearchLocationCollectionViewCell.reuseIdentifier,
                 for: indexPath
             ) as? SearchLocationCollectionViewCell else { return nil }
             

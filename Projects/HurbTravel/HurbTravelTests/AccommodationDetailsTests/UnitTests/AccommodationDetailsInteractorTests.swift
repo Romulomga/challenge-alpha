@@ -11,19 +11,16 @@ import XCTest
 class AccommodationDetailsInteractorTests: XCTestCase {
         
         var sut: AccommodationDetailsInteractor!
-        var workerSpy: AccommodationDetailsWorkerSpy!
         var presenterSpy: AccommodationDetailsPresenterSpy!
         
         override func setUp() {
             super.setUp()
-            self.workerSpy = AccommodationDetailsWorkerSpy()
             self.presenterSpy = AccommodationDetailsPresenterSpy()
-            self.sut = AccommodationDetailsInteractor(presenter: self.presenterSpy, worker: self.workerSpy)
+            self.sut = AccommodationDetailsInteractor(presenter: self.presenterSpy)
         }
         
         override func tearDown() {
             self.sut = nil
-            self.workerSpy = nil
             self.presenterSpy = nil
             super.tearDown()
         }

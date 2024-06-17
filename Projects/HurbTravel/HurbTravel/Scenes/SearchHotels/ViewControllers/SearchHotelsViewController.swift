@@ -30,7 +30,7 @@ private struct Item: Identifiable {
 private class CollectionViewSkeletonDiffableDataSource<Section: Hashable, Item: Hashable>: UICollectionViewDiffableDataSource<Section, Item>, SkeletonCollectionViewDataSource {
 
     func collectionSkeletonView(_ skeletonView: UICollectionView, cellIdentifierForItemAt indexPath: IndexPath) -> ReusableCellIdentifier {
-        return HotelsCollectionViewCell.cellIdentifier
+        return HotelsCollectionViewCell.reuseIdentifier
     }
 
     func collectionSkeletonView(_ skeletonView: UICollectionView, prepareCellForSkeleton cell: UICollectionViewCell, at indexPath: IndexPath) {
@@ -102,17 +102,17 @@ class SearchHotelsViewController: UIViewController {
         
         self.collectionView.register(
             HotelsCollectionViewCell.nib,
-            forCellWithReuseIdentifier: HotelsCollectionViewCell.cellIdentifier
+            forCellWithReuseIdentifier: HotelsCollectionViewCell.reuseIdentifier
         )
         
         self.collectionView.register(
             EmptyListCollectionViewCell.nib,
-            forCellWithReuseIdentifier: EmptyListCollectionViewCell.cellIdentifier
+            forCellWithReuseIdentifier: EmptyListCollectionViewCell.reuseIdentifier
         )
         
         self.collectionView.register(
             NoSearchResultsCollectionViewCell.nib,
-            forCellWithReuseIdentifier: NoSearchResultsCollectionViewCell.cellIdentifier
+            forCellWithReuseIdentifier: NoSearchResultsCollectionViewCell.reuseIdentifier
         )
     }
     
@@ -145,7 +145,7 @@ class SearchHotelsViewController: UIViewController {
             if let product: Product = item as? Product {
                 
                 guard let cell: HotelsCollectionViewCell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: HotelsCollectionViewCell.cellIdentifier,
+                    withReuseIdentifier: HotelsCollectionViewCell.reuseIdentifier,
                     for: indexPath
                 ) as? HotelsCollectionViewCell else { return nil }
                 
@@ -157,7 +157,7 @@ class SearchHotelsViewController: UIViewController {
             if let section: Section.Identifier = item as? Section.Identifier, section == .empty {
                 
                 guard let cell: EmptyListCollectionViewCell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: EmptyListCollectionViewCell.cellIdentifier,
+                    withReuseIdentifier: EmptyListCollectionViewCell.reuseIdentifier,
                     for: indexPath
                 ) as? EmptyListCollectionViewCell else { return nil }
                             
@@ -167,7 +167,7 @@ class SearchHotelsViewController: UIViewController {
             if let section: Section.Identifier = item as? Section.Identifier, section == .noSearchResults {
                 
                 guard let cell: NoSearchResultsCollectionViewCell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: NoSearchResultsCollectionViewCell.cellIdentifier,
+                    withReuseIdentifier: NoSearchResultsCollectionViewCell.reuseIdentifier,
                     for: indexPath
                 ) as? NoSearchResultsCollectionViewCell else { return nil }
                             

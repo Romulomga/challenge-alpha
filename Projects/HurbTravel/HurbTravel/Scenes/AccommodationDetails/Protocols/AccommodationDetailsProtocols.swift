@@ -8,11 +8,6 @@
 import UIKit
 import Foundation
 
-protocol AccommodationDetailsProtocol {
-    
-    func doSomeWork()
-}
-
 protocol AccommodationDetailsNavigation {
     func navigateToDetail(sender: Any?)
 }

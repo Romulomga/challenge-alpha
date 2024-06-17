@@ -1,5 +1,5 @@
 //
-//  UIImageView.swift
+//  UIImageView+loadPhoto.swift
 //  HurbTravel
 //
 //  Created by Matheus Ferreira on 13/06/24.

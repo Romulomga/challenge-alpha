@@ -10,14 +10,12 @@ import UIKit
 class AccommodationDetailsInteractor: AccommodationDetailsBusinessLogic, AccommodationDetailsDataStore {
     
     var presenter: AccommodationDetailsPresentationLogic?
-    var worker: AccommodationDetailsProtocol?
-    
     var product: Product?
     
-    init(presenter: AccommodationDetailsPresentationLogic, worker: AccommodationDetailsProtocol) {
+    init(presenter: AccommodationDetailsPresentationLogic) {
         
         self.presenter = presenter
-        self.worker = worker
+
     }
     
     // MARK: Do something
