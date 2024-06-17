@@ -66,7 +66,7 @@ extension Product {
     func getFormattedPrice() -> String? {
         
         let amountValue: Double = self.price.amount
-        let formatter: NumberFormatter = NumberFormatter.currencyFormatter(from: self.price.currency)
+        let formatter: NumberFormatter = NumberFormatter.currencyFormat(from: self.price.currency)
         return formatter.string(for: amountValue)
     }
     

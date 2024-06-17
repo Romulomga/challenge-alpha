@@ -8,6 +8,18 @@
 import UIKit
 import SkeletonView
 
+protocol SearchLocationDisplay: AnyObject {
+    
+    func displayLocations(viewModel: SearchLocation.Setup.ViewModel)
+    func displayHideSkeleton()
+    func displayErrorAlert()
+}
+
+protocol SuggestedResult: AnyObject {
+
+    func didSelectLocation(location: String)
+}
+
 private enum Section {
     case main
 }
@@ -26,7 +38,7 @@ private struct Item: Hashable {
 private class CollectionViewSkeletonDiffableDataSource<Section: Hashable, Item: Hashable>: UICollectionViewDiffableDataSource<Section, Item>, SkeletonCollectionViewDataSource {
 
     func collectionSkeletonView(_ skeletonView: UICollectionView, cellIdentifierForItemAt indexPath: IndexPath) -> ReusableCellIdentifier {
-        return SearchLocationCollectionViewCell.cellIdentifier
+        return SearchLocationCollectionViewCell.reuseIdentifier
     }
 
     func collectionSkeletonView(_ skeletonView: UICollectionView, prepareCellForSkeleton cell: UICollectionViewCell, at indexPath: IndexPath) {
@@ -41,7 +53,7 @@ private class CollectionViewSkeletonDiffableDataSource<Section: Hashable, Item: 
 class SearchLocationViewController: UIViewController {
     
     var interactor: SearchLocationLogic?
-    var router: (NSObjectProtocol & SearchLocationRouting & SearchLocationDataPassing)?
+    var router: (NSObjectProtocol)?
     
     private lazy var dataSource: UICollectionViewDiffableDataSource<Section, Item>! = nil
     weak var delegate: SuggestedResult?
@@ -72,7 +84,7 @@ class SearchLocationViewController: UIViewController {
         
         self.collectionView.register(
             SearchLocationCollectionViewCell.nib,
-            forCellWithReuseIdentifier: SearchLocationCollectionViewCell.cellIdentifier
+            forCellWithReuseIdentifier: SearchLocationCollectionViewCell.reuseIdentifier
         )
     }
     
@@ -101,7 +113,7 @@ class SearchLocationViewController: UIViewController {
         self.dataSource = CollectionViewSkeletonDiffableDataSource<Section, Item>(collectionView: collectionView) { (collectionView: UICollectionView, indexPath: IndexPath, location: Item) -> UICollectionViewCell? in
             
             guard let cell: SearchLocationCollectionViewCell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: SearchLocationCollectionViewCell.cellIdentifier,
+                withReuseIdentifier: SearchLocationCollectionViewCell.reuseIdentifier,
                 for: indexPath
             ) as? SearchLocationCollectionViewCell else { return nil }
             

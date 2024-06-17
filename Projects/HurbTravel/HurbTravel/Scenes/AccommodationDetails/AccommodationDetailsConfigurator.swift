@@ -12,7 +12,7 @@ import UIKit
     @objc static func setup(viewController: AccommodationDetailsViewController) {
         
         let presenter: AccommodationDetailsPresenter = AccommodationDetailsPresenter(viewController: viewController)
-        let interactor: AccommodationDetailsInteractor = AccommodationDetailsInteractor(presenter: presenter, worker: AccommodationDetailsWorker())
+        let interactor: AccommodationDetailsInteractor = AccommodationDetailsInteractor(presenter: presenter)
         let router: AccommodationDetailsRouter = AccommodationDetailsRouter(viewController: viewController, dataStore: interactor)
         
         viewController.interactor = interactor

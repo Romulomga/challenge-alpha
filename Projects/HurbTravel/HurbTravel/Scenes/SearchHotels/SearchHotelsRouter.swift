@@ -11,7 +11,18 @@ private enum Segues: String {
     case toDetails
 }
 
-class SearchHotelsRouter: NSObject, SearchHotelsRoutingLogic, SearchHotelsDataPassing {
+@objc protocol SearchHotelsRouting {
+    
+    func routeTo(segue: UIStoryboardSegue, sender: Any?)
+    func navigateToDetails()
+}
+
+protocol SearchHotelsDataPassing {
+    
+    var dataStore: SearchHotelsDataStore? { get }
+}
+
+class SearchHotelsRouter: NSObject, SearchHotelsRouting, SearchHotelsDataPassing {
     
     weak var viewController: SearchHotelsViewController?
     var dataStore: SearchHotelsDataStore?
@@ -34,7 +45,7 @@ class SearchHotelsRouter: NSObject, SearchHotelsRoutingLogic, SearchHotelsDataPa
                 AccommodationDetailsConfigurator.setup(viewController: nextController)
                 
                 if let sourceDataStore: SearchHotelsDataStore = self.dataStore,
-                   var destinationDataSource: AccommodationDetailsDataStore = nextController.router?.dataStore {
+                   var destinationDataSource: AccommodationDataStore = nextController.router?.dataStore {
 
                     destinationDataSource.product = sourceDataStore.product
                 }

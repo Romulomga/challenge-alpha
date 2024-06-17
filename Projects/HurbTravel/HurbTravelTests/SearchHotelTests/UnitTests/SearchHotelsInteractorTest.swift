@@ -48,7 +48,7 @@ class SearchHotelsInteractorTest: XCTestCase {
     func testSelectingAProduct() {
         
         let product: Product = Product(url: nil, category: .hotel, description: "", medias: [], price: Price(amount: 0, currency: ""), location: Location(state: nil, country: nil, city: nil, text: nil), name: "", amenities: [])
-        self.sut?.didSelectedHotel(request: SearchHotelModel.Selection.Request(product: product))
+        self.sut?.didSelectedHotel(request: SearchHotelModel.SelectionRequest(product: product))
         
         XCTAssertEqual(product, self.sut.product)
     }

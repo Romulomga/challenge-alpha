@@ -7,17 +7,26 @@
 
 import UIKit
 
-class AccommodationDetailsInteractor: AccommodationDetailsBusinessLogic, AccommodationDetailsDataStore {
+protocol AccommodationDetailsBusiness {
     
-    var presenter: AccommodationDetailsPresentationLogic?
-    var worker: AccommodationDetailsProtocol?
+    func buildSetup()
+    func shareProduct()
+}
+
+protocol AccommodationDataStore {
     
+    var product: Product? { get set }
+}
+
+class AccommodationDetailsInteractor: AccommodationDetailsBusiness, AccommodationDataStore {
+    
+    var presenter: AccommodationDetailsPresentation?
     var product: Product?
     
-    init(presenter: AccommodationDetailsPresentationLogic, worker: AccommodationDetailsProtocol) {
+    init(presenter: AccommodationDetailsPresentation) {
         
         self.presenter = presenter
-        self.worker = worker
+
     }
     
     // MARK: Do something

@@ -11,10 +11,6 @@ enum AccommodationDetails {
     
     enum Setup {
         
-        struct Request {
-            
-        }
-        
         struct Response {
             
             var product: Product
@@ -28,10 +24,6 @@ enum AccommodationDetails {
     }
     
     enum Share {
-        
-        struct Request {
-            
-        }
         
         struct Response {
             

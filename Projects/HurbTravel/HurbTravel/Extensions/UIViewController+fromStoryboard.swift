@@ -1,5 +1,5 @@
 //
-//  UIViewController.swift
+//  UIViewController+fromStoryboard.swift
 //  HurbTravel
 //
 //  Created by Matheus Ferreira on 13/06/24.
@@ -9,7 +9,7 @@ import UIKit
 
 extension UIViewController {
     
-    class func newInstanceFromStoryboard<T: UIViewController>(
+    class func fromStoryboard<T: UIViewController>(
         storyboardName: String,
         storyboardId: String) -> T {
                     

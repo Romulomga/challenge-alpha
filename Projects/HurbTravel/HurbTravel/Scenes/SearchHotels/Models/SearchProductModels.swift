@@ -30,20 +30,9 @@ enum SearchHotelModel {
             var products: [Product]
         }
     }
-    
-    enum Selection {
         
-        struct Request {
+        struct SelectionRequest {
             
             var product: Product
         }
-        
-        struct Response {
-            
-        }
-        
-        struct ViewModel {
-            
-        }
-    }
 }

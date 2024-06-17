@@ -7,21 +7,18 @@
 
 import UIKit
 
-class AccommodationDetailsRouter: NSObject, AccommodationDetailsRouting, AccommodationDetailsDataPassing {
+protocol AccommodationDetailsDataPassing {
+    var dataStore: AccommodationDataStore? { get }
+}
+
+class AccommodationDetailsRouter: NSObject, /*AccommodationDetailsRouting,*/ AccommodationDetailsDataPassing {
     
     weak var viewController: AccommodationDetailsViewController?
-    var dataStore: AccommodationDetailsDataStore?
+    var dataStore: AccommodationDataStore?
     
-    init(viewController: AccommodationDetailsViewController, dataStore: AccommodationDetailsDataStore) {
+    init(viewController: AccommodationDetailsViewController, dataStore: AccommodationDataStore) {
         
         self.viewController = viewController
         self.dataStore = dataStore
     }
-    
-    // MARK: Route to
-    
-    func routeTo(segue: UIStoryboardSegue, sender: Any?) {
-        
-    }
 }
-

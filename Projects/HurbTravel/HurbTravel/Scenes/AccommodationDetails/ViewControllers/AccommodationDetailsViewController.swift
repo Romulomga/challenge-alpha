@@ -8,10 +8,15 @@
 import UIKit
 import Kingfisher
 
+protocol AccommodationDetailsDisplay: AnyObject {
+    func displaySetupView(viewModel: AccommodationDetails.Setup.ViewModel)
+    func displayShareProduct(viewModel: AccommodationDetails.Share.ViewModel)
+}
+
 class AccommodationDetailsViewController: UIViewController {
     
-    var router: (NSObjectProtocol & AccommodationDetailsRouting & AccommodationDetailsDataPassing)?
-    var interactor: AccommodationDetailsBusinessLogic?
+    var router: (NSObjectProtocol & AccommodationDetailsDataPassing)?
+    var interactor: AccommodationDetailsBusiness?
     
     // MARK: Outlets
 
@@ -40,8 +45,6 @@ class AccommodationDetailsViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        
-        self.router?.routeTo(segue: segue, sender: sender)
     }
     
     // MARK: Build Layout
@@ -60,7 +63,7 @@ class AccommodationDetailsViewController: UIViewController {
     }
 }
 
-extension AccommodationDetailsViewController: AccommodationDetailsDisplayLogic {
+extension AccommodationDetailsViewController: AccommodationDetailsDisplay {
     
     func displaySetupView(viewModel: AccommodationDetails.Setup.ViewModel) {
         

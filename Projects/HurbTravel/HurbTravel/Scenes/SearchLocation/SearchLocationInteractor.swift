@@ -7,7 +7,12 @@
 
 import UIKit
 
-class SearchLocationInteractor: SearchLocationLogic, SearchLocationDataStore {
+protocol SearchLocationLogic {
+    
+    func searchTerm(request: SearchLocation.Setup.Request)
+}
+
+class SearchLocationInteractor: SearchLocationLogic {
     
     var presenter: SearchLocationPresentation?
     var worker: SearchLocationProtocols?

@@ -7,7 +7,7 @@
 
 @testable import HurbTravel
 
-class SearchHotelsPresenterSpy: SearchHotelsPresentationLogic {
+class SearchHotelsPresenterSpy: SearchHotelsPresentation {
 
     var invokedPresentNewHotels = false
     var invokedPresentNewHotelsCount = 0

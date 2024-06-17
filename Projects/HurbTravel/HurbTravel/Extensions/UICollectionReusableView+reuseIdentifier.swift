@@ -1,5 +1,5 @@
 //
-//  UICollectionReusableView.swift
+//  UICollectionReusableView+reuseIdentifier.swift
 //  HurbTravel
 //
 //  Created by Matheus Ferreira on 13/06/24.
@@ -9,7 +9,7 @@ import UIKit
 
 extension UICollectionReusableView {
 
-    static var cellIdentifier: String {
+    static var reuseIdentifier: String {
         
         return String(describing: self)
     }
@@ -19,7 +19,7 @@ extension UICollectionReusableView {
         let bundle: Bundle = Bundle(for: self)
         
         let nib: UINib = UINib(
-            nibName: self.cellIdentifier,
+            nibName: self.reuseIdentifier,
             bundle: bundle
         )
         
