@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C512E5DB2C1E1C5800DB9CE2 /* SearchLocationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C512E5DA2C1E1C5800DB9CE2 /* SearchLocationProtocols.swift */; };
 		C543F76F2C1BA0B000CE4C5B /* AccommodationDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C543F76E2C1BA0B000CE4C5B /* AccommodationDetails.storyboard */; };
 		C543F7712C1BA37B00CE4C5B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C543F7702C1BA37B00CE4C5B /* Product.swift */; };
 		C543F7732C1BA4EF00CE4C5B /* ModelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C543F7722C1BA4EF00CE4C5B /* ModelStore.swift */; };
@@ -89,7 +88,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C512E5DA2C1E1C5800DB9CE2 /* SearchLocationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationProtocols.swift; sourceTree = "<group>"; };
 		C543F76E2C1BA0B000CE4C5B /* AccommodationDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccommodationDetails.storyboard; sourceTree = "<group>"; };
 		C543F7702C1BA37B00CE4C5B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		C543F7722C1BA4EF00CE4C5B /* ModelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelStore.swift; sourceTree = "<group>"; };
@@ -229,14 +227,6 @@
 			path = Workers;
 			sourceTree = "<group>";
 		};
-		C512E5D82C1E1B0E00DB9CE2 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				C512E5DA2C1E1C5800DB9CE2 /* SearchLocationProtocols.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		C512E5D92C1E1B3300DB9CE2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,7 +309,6 @@
 			isa = PBXGroup;
 			children = (
 				C512E5D92C1E1B3300DB9CE2 /* Views */,
-				C512E5D82C1E1B0E00DB9CE2 /* Protocols */,
 				C512E5D72C1E1B0100DB9CE2 /* Workers */,
 				C512E5D62C1E1AF700DB9CE2 /* ViewControllers */,
 				C512E5D52C1E1AEE00DB9CE2 /* Models */,
@@ -647,7 +636,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C512E5DB2C1E1C5800DB9CE2 /* SearchLocationProtocols.swift in Sources */,
 				C543F7932C1BA83100CE4C5B /* String+readHtml.swift in Sources */,
 				C543F8042C1BD0A000CE4C5B /* SearchLocationRouter.swift in Sources */,
 				C543F7952C1BA86700CE4C5B /* NumberFormatter+currencyFormat.swift in Sources */,

@@ -13,7 +13,7 @@ import UIKit
         
         let presenter: SearchLocationPresenter = SearchLocationPresenter(viewController: viewController)
         let interactor: SearchLocationInteractor = SearchLocationInteractor(presenter: presenter, worker: SearchLocationWorker())
-        let router: SearchLocationRouter = SearchLocationRouter(viewController: viewController, dataStore: interactor)
+        let router: SearchLocationRouter = SearchLocationRouter(viewController: viewController)
         
         viewController.interactor = interactor
         viewController.router = router

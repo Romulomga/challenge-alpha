@@ -17,7 +17,7 @@ extension UIImageView {
         let placeholderImage = UIImage(named: "placeholder_image_name")
         
         let imageProcessor = DownsamplingImageProcessor(size: self.bounds.size)
-                     |> RoundCornerImageProcessor(cornerRadius: 20)
+                     |> RoundCornerImageProcessor(cornerRadius: 10)
         
         self.kf.indicatorType = .activity
         

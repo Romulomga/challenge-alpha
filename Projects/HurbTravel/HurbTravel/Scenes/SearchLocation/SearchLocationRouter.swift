@@ -7,15 +7,18 @@
 
 import UIKit
 
-class SearchLocationRouter: NSObject, SearchLocationRouting, SearchLocationDataPassing {
+@objc protocol SearchLocationRouting {
+    
+    func routeTo(segue: UIStoryboardSegue, sender: Any?)
+}
+
+class SearchLocationRouter: NSObject, SearchLocationRouting {
     
     weak var viewController: SearchLocationViewController?
-    var dataStore: SearchLocationDataStore?
     
-    init(viewController: SearchLocationViewController, dataStore: SearchLocationDataStore) {
+    init(viewController: SearchLocationViewController) {
         
         self.viewController = viewController
-        self.dataStore = dataStore
     }
     
     // MARK: Route to

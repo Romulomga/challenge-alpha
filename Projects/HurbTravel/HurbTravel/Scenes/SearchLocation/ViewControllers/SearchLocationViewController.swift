@@ -8,6 +8,18 @@
 import UIKit
 import SkeletonView
 
+protocol SearchLocationDisplay: AnyObject {
+    
+    func displayLocations(viewModel: SearchLocation.Setup.ViewModel)
+    func displayHideSkeleton()
+    func displayErrorAlert()
+}
+
+protocol SuggestedResult: AnyObject {
+
+    func didSelectLocation(location: String)
+}
+
 private enum Section {
     case main
 }
@@ -41,7 +53,7 @@ private class CollectionViewSkeletonDiffableDataSource<Section: Hashable, Item: 
 class SearchLocationViewController: UIViewController {
     
     var interactor: SearchLocationLogic?
-    var router: (NSObjectProtocol & SearchLocationRouting & SearchLocationDataPassing)?
+    var router: (NSObjectProtocol & SearchLocationRouting)?
     
     private lazy var dataSource: UICollectionViewDiffableDataSource<Section, Item>! = nil
     weak var delegate: SuggestedResult?

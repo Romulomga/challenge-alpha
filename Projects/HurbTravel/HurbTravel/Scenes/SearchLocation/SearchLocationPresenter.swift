@@ -7,6 +7,13 @@
 
 import UIKit
 
+protocol SearchLocationPresentation {
+    
+    func presentLocations(response: SearchLocation.Setup.Response)
+    func presentHideSkeleton()
+    func presentErrorAlert()
+}
+
 class SearchLocationPresenter: SearchLocationPresentation {
     
     weak var viewController: SearchLocationDisplay?

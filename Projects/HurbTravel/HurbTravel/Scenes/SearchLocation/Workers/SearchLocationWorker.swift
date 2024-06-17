@@ -8,6 +8,11 @@
 import UIKit
 import HUGraphQL
 
+protocol SearchLocationProtocols {
+    
+    func searchLocations(term: String, limit: Int, completion: @escaping (Result<[Location]?, ServiceError>) -> Void)
+}
+
 class SearchLocationWorker: SearchLocationProtocols {
     
     func searchLocations(term: String, limit: Int, completion: @escaping (Result<[Location]?, ServiceError>) -> Void) {
